@@ -158,6 +158,18 @@ This program is available under Apache License Version 2.0, available at https:/
           this._addActiveListeners();
         }
 
+        check() {
+          this.checked = true;
+        }
+
+        uncheck() {
+          this.checked = false;
+        }
+
+        toggle() {
+          this.checked = !this.checked;
+        }
+
         _checkedChanged(checked) {
           this.setAttribute('aria-checked', checked);
         }
@@ -186,7 +198,7 @@ This program is available under Apache License Version 2.0, available at https:/
           this.addEventListener('keyup', e => {
             if (!this.disabled && e.keyCode === 32) {
               e.preventDefault();
-              this.checked = !this.checked;
+              this.toggle();
               this.removeAttribute('active');
             }
           });
