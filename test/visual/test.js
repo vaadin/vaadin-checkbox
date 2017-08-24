@@ -1,4 +1,4 @@
-gemini.suite('vaadin-button', function(rootSuite) {
+gemini.suite('vaadin-checkbox', function(rootSuite) {
   function wait(actions, find) {
     actions.wait(5000);
   }
@@ -20,6 +20,9 @@ gemini.suite('vaadin-button', function(rootSuite) {
       .setCaptureElements('#default-tests')
       .capture('default')
       .capture('focus-ring', function(actions) {
+        actions.sendKeys(gemini.TAB);
+      })
+      .capture('focus-ring-skip-disabled', function(actions) {
         actions.sendKeys(gemini.TAB);
       })
       .capture('checked', function(actions) {
