@@ -125,6 +125,21 @@ This program is available under Apache License Version 2.0, available at https:/
             },
 
             /**
+             * True if the checkbox is disabled.
+             */
+            disabled: {
+              type: Boolean,
+              observer: '_disabledChanged'
+            },
+
+            /**
+             * Stores the previous value of tabindex attribute when checkbox is disabled
+             */
+            _previousTabIndex: {
+              type: Number
+            },
+
+            /**
              * Indeterminate state of the checkbox when it's neither checked nor unchecked, but undetermined.
              * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Indeterminate_state_checkboxes
              */
@@ -207,6 +222,16 @@ This program is available under Apache License Version 2.0, available at https:/
               }
             }
           });
+        }
+
+        _disabledChanged(disabled) {
+          if (this.disabled && !this._previousTabIndex) {
+            this._previousTabIndex = this.$.label.getAttribute('tabindex');
+            this.setAttribute('tabindex', '-1');
+          } else if (!this.disabled && this._previousTabIndex) {
+            this.setAttribute('tabindex', this._previousTabIndex);
+            this._previousTabIndex = undefined;
+          }
         }
 
         get focusElement() {
