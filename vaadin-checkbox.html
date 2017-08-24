@@ -228,9 +228,11 @@ This program is available under Apache License Version 2.0, available at https:/
           if (this.disabled && !this._previousTabIndex) {
             this._previousTabIndex = this.$.label.getAttribute('tabindex');
             this.setAttribute('tabindex', '-1');
+            this.setAttribute('aria-disabled', 'true');
           } else if (!this.disabled && this._previousTabIndex) {
             this.setAttribute('tabindex', this._previousTabIndex);
             this._previousTabIndex = undefined;
+            this.removeAttribute('aria-disabled');
           }
         }
 
