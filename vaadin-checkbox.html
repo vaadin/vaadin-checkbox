@@ -36,6 +36,10 @@ This program is available under Apache License Version 2.0, available at https:/
         outline: none;
       }
 
+      :host([disabled]) {
+        -webkit-tap-highlight-color: transparent;
+      }
+
       :host([disabled]) [part="label"] {
         opacity: 0.5;
       }
