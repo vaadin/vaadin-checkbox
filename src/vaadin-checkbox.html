@@ -241,10 +241,19 @@ This program is available under Apache License Version 2.0, available at https:/
         }
 
         _handleClick(e) {
-          if (!this.disabled && !this.indeterminate) {
-            if (e.composedPath()[0] !== this._nativeCheckbox) {
-              e.preventDefault();
-              this._toggleChecked();
+          if (!this.disabled) {
+            if (!this.indeterminate) {
+              if (e.composedPath()[0] !== this._nativeCheckbox) {
+                e.preventDefault();
+                this._toggleChecked();
+              }
+            } else {
+              /*
+               * Required for IE 11 and Edge.
+               * "change" event isn't called the first time an indeterminate checkbox is clicked.
+               */
+              this.indeterminate = false;
+              this._nativeCheckbox.dispatchEvent(new CustomEvent('change'));
             }
           }
         }
