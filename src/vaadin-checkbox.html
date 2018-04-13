@@ -51,6 +51,7 @@ This program is available under Apache License Version 2.0, available at https:/
           checked="{{checked::change}}"
           disabled$="[[disabled]]"
           indeterminate="{{indeterminate::change}}"
+          required$="[[required]]"
           role="presentation"
           tabindex="-1">
       </span>
@@ -149,7 +150,25 @@ This program is available under Apache License Version 2.0, available at https:/
 
             _nativeCheckbox: {
               type: Object
-            }
+            },
+
+            /**
+             * Specifies that the user must fill in a value.
+             */
+            required: {
+              type: Boolean,
+              reflectToAttribute: true
+            },
+
+            /**
+             * This property is set to true when the control value is invalid.
+             */
+            invalid: {
+              type: Boolean,
+              reflectToAttribute: true,
+              notify: true,
+              value: false
+            },
           };
         }
 
@@ -240,6 +259,10 @@ This program is available under Apache License Version 2.0, available at https:/
           return this.shadowRoot.querySelector('label');
         }
 
+        get validateElement() {
+          return this.shadowRoot.querySelector('input');
+        }
+
         _handleClick(e) {
           if (!this.disabled) {
             if (!this.indeterminate) {
@@ -261,6 +284,28 @@ This program is available under Apache License Version 2.0, available at https:/
 
         _toggleChecked() {
           this.checked = !this.checked;
+        }
+
+        /**
+         * Returns true if the current input value satisfies all constraints (if any)
+         * @returns {boolean}
+         */
+        checkValidity() {
+          if (this.required) {
+            return this.validateElement.checkValidity();
+          } else {
+            return !this.invalid;
+          }
+        }
+
+        /**
+         * Returns true if `value` is valid.
+         * `<iron-form>` uses this to check the validity or all its elements.
+         *
+         * @return {boolean} True if the value is valid.
+         */
+        validate() {
+          return !(this.invalid = !this.checkValidity());
         }
       }
 
