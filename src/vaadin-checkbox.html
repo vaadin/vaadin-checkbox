@@ -242,7 +242,7 @@ This program is available under Apache License Version 2.0, available at https:/
         }
 
         _handleClick(e) {
-          if (!this.disabled) {
+          if (!this.disabled && !(e.target.matches || e.target.matchesSelector).call(e.target, 'a')) {
             if (!this.indeterminate) {
               if (e.composedPath()[0] !== this._nativeCheckbox) {
                 e.preventDefault();
