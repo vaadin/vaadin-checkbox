@@ -181,9 +181,11 @@
       :host([theme~="switch"]) label {
         align-items: center;
       }
+
       :host([theme~="switch"][theme~="label-left"]) label {
         flex-direction: row-reverse;
       }
+
       :host([theme~="switch"]) [part="checkbox"] {
         width: var(--lumo-size-l);
         height: var(--lumo-size-xs);
@@ -192,6 +194,7 @@
         cursor: pointer;
         background-color: var(--lumo-contrast-40pct);
       }
+
       :host([theme~="switch"]) [part="checkbox"]::after {
         display: inline-block;
         width: calc(var(--lumo-size-xs) - 4px);
@@ -207,14 +210,17 @@
         background-color: var(--lumo-base-color);
         transition: transform .2s ease-in;
       }
+
       :host([theme~="switch"][checked]) [part="checkbox"]::after {
         --translate-x: calc(var(--lumo-size-l) - var(--lumo-size-xs));
-        transform: translatex(var(--translate-x));
+        transform: translateX(var(--translate-x));
         transition: transform .2s ease-in;
       }
+
       :host([theme~="switch"][checked]) [part="checkbox"] {
         background-color: var(--lumo-primary-color);
       }
+
       :host([theme~="switch"][checked][disabled]) [part="checkbox"] {
         background-color: var(--lumo-primary-color);
         opacity: 0.3;
