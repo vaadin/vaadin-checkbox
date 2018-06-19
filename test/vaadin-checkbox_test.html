@@ -231,6 +231,68 @@
         expect(vaadinCheckbox.indeterminate).to.be.false;
         expect(vaadinCheckbox.getAttribute('aria-checked')).to.be.eql('false');
       });
+
+      it('should be invalid if required is true and checkbox is unchecked on click', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = true;
+
+        vaadinCheckbox.click();
+
+        expect(vaadinCheckbox.invalid).to.be.true;
+      });
+
+      it('should not be invalid if required is true and checkbox is checked on click', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = false;
+
+        vaadinCheckbox.click();
+
+        expect(vaadinCheckbox.invalid).to.be.false;
+      });
+
+      it('should be valid if required is true and checkbox is checked after space and blur', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = false;
+
+        MockInteractions.keyDownOn(vaadinCheckbox, 32);
+        MockInteractions.keyUpOn(vaadinCheckbox, 32);
+        MockInteractions.keyDownOn(vaadinCheckbox, 9);
+        MockInteractions.keyUpOn(vaadinCheckbox, 9);
+
+        expect(vaadinCheckbox.invalid).to.be.false;
+      });
+
+      it('should not be valid if required is true and checkbox is unchecked after space and blur', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = true;
+
+        MockInteractions.keyDownOn(vaadinCheckbox, 32);
+        MockInteractions.keyUpOn(vaadinCheckbox, 32);
+        MockInteractions.keyDownOn(vaadinCheckbox, 9);
+        MockInteractions.keyUpOn(vaadinCheckbox, 9);
+
+        expect(vaadinCheckbox.invalid).to.be.true;
+      });
+
+      it('should be invalid if required is true and checkbox is unchecked on blur', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = false;
+
+        MockInteractions.keyDownOn(vaadinCheckbox, 9);
+        MockInteractions.keyUpOn(vaadinCheckbox, 9);
+
+        expect(vaadinCheckbox.invalid).to.be.true;
+      });
+
+      it('should not be invalid if required is true and checkbox is checked on blur', () => {
+        vaadinCheckbox.required = true;
+        vaadinCheckbox.checked = true;
+
+        MockInteractions.keyDownOn(vaadinCheckbox, 9);
+        MockInteractions.keyUpOn(vaadinCheckbox, 9);
+
+        expect(vaadinCheckbox.invalid).to.be.false;
+      });
     });
 
     describe('iron-form-checkbox', () => {
