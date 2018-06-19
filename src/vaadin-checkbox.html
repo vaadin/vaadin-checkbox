@@ -253,6 +253,11 @@ This program is available under Apache License Version 2.0, available at https:/
               }
             }
           });
+
+          // ONBLUR
+          this.addEventListener('blur', () => {
+            this.checkValidity();
+          });
         }
 
         get focusElement() {
@@ -284,9 +289,7 @@ This program is available under Apache License Version 2.0, available at https:/
 
         _toggleChecked() {
           this.checked = !this.checked;
-          if (this.invalid) {
-            this.validate();
-          }
+          this.validate();
         }
 
         /**
