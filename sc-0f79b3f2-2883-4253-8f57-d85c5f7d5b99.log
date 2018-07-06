@@ -1,0 +1,967 @@
+20180706 113446.027 [11584] Sauce Connect 4.4.12, build 1882 74cd761 -dirty
+20180706 113446.028 [11584] Trying to autodetect proxy settings
+20180706 113446.034 [11584] Starting up; pid 11584
+20180706 113446.034 [11584] Command line arguments: C:\Users\Sohrab\AppData\Roaming\npm\node_modules\gemini-sauce\node_modules\sauce-connect-launcher\sc\sc-4.4.12-win32\bin\sc.exe --tunnel-identifier 0f79b3f2-2883-4253-8f57-d85c5f7d5b99 -u vaadin-components -k **** --readyfile C:\Users\Sohrab\AppData\Local\Temp\sc-launcher-readyfile 
+20180706 113446.034 [11584] Log file: C:\Users\Sohrab\Desktop\projects\vaadin-checkbox\sc-0f79b3f2-2883-4253-8f57-d85c5f7d5b99.log
+20180706 113446.034 [11584] Pid file: C:\Users\Sohrab\AppData\Roaming/sc_client-0f79b3f2-2883-4253-8f57-d85c5f7d5b99.pid
+20180706 113446.034 [11584] Timezone: EEST GMT offset: 3h
+20180706 113446.034 [11584] Using no proxy for connecting to Sauce Labs REST API.
+20180706 113447.163 [11584] PROXY *** scproxy started ***
+20180706 113447.177 [11584] PROXY found DNS server 10.64.1.2
+20180706 113447.177 [11584] PROXY found DNS server 10.64.1.3
+20180706 113447.366 [11584] Started scproxy on port 1915.
+20180706 113447.366 [11584] Please wait for 'you may start your tests' to start your tests.
+20180706 113507.850 [11584] Secure remote tunnel VM provisioned.
+20180706 113507.850 [11584] Tunnel ID: 51149996b76e4dfa9692b549cf353d94
+20180706 113507.850 [11584] Using no proxy for connecting to tunnel VM.
+20180706 113507.851 [11584] Starting Selenium listener...
+20180706 113507.851 [11584] Establishing secure TLS connection to tunnel...
+20180706 113507.860 [11584] [EVDNS] Added nameserver 10.64.1.2:53 as 03918BD8
+20180706 113507.861 [11584] [EVDNS] Added nameserver 10.64.1.3:53 as 0391A050
+20180706 113507.862 [11584] MAIN connecting to maki88143.miso.saucelabs.com:443
+20180706 113508.102 [11584] Selenium listener started on port 4445.
+20180706 113508.235 [11584] MAIN connecting to KGP server maki88143.miso.saucelabs.com took 2627 ms
+20180706 113510.017 [11584] Sauce Connect is up, you may start your tests.
+20180706 113522.361 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) -> GET https://tiles.services.mozilla.com/v3/links/fetch/en-US/release (595 bytes)
+20180706 113522.384 [11584] PROXY resolved 'tiles.services.mozilla.com' to '35.166.0.175:443'
+20180706 113523.270 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) <- 303 tiles.services.mozilla.com:443 (266 bytes)
+20180706 113523.392 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) -> POST https://location.services.mozilla.com/v1/country?key=7e40f68c-7938-4c5d-9f95-e61647c213eb (646 bytes)
+20180706 113523.445 [11584] PROXY 127.0.0.1:1938 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (578 bytes)
+20180706 113523.447 [11584] PROXY resolved 'location.services.mozilla.com' to '52.17.111.251:443'
+20180706 113523.449 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113523.472 [11584] PROXY 127.0.0.1:1938 (10.100.26.70) <- 200 localhost:8080 (1121 bytes)
+20180706 113523.640 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) <- 200 location.services.mozilla.com:443 (276 bytes)
+20180706 113523.719 [11584] PROXY 127.0.0.1:1938 (10.100.26.70) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (558 bytes)
+20180706 113523.738 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113523.751 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (588 bytes)
+20180706 113523.775 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113523.787 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (594 bytes)
+20180706 113523.825 [11584] PROXY 127.0.0.1:1944 (172.20.46.13) -> GET https://tiles-cloudfront.cdn.mozilla.net/desktop/STAR/en-US.6ba6c5a5fc4220f5d0423b49533de9c563f83f98.ag.json (646 bytes)
+20180706 113523.838 [11584] PROXY resolved 'tiles-cloudfront.cdn.mozilla.net' to '52.85.242.62:443'
+20180706 113523.884 [11584] PROXY 127.0.0.1:1944 (172.20.46.13) <- 200 tiles-cloudfront.cdn.mozilla.net:443 (2591 bytes)
+20180706 113524.012 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) -> GET https://search.services.mozilla.com/1/firefox/47.0.1/release/en-US/FI/default/default (618 bytes)
+20180706 113524.025 [11584] PROXY resolved 'search.services.mozilla.com' to '52.24.130.228:443'
+20180706 113524.851 [11584] PROXY 127.0.0.1:1938 (10.100.26.70) <- 200 localhost:8080 (128959 bytes)
+20180706 113524.857 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (407 bytes)
+20180706 113524.858 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (414 bytes)
+20180706 113524.945 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) <- 200 search.services.mozilla.com:443 (285 bytes)
+20180706 113525.019 [11584] PROXY 127.0.0.1:1944 (172.20.113.86) -> GET http://www.msftncsi.com/ncsi.txt (265 bytes)
+20180706 113525.029 [11584] PROXY 127.0.0.1:1949 (172.20.113.86) -> GET http://ipv6.msftncsi.com/ncsi.txt (267 bytes)
+20180706 113525.037 [11584] PROXY resolved 'www.msftncsi.com' to '62.165.164.177:80'
+20180706 113525.071 [11584] PROXY 127.0.0.1:1944 (172.20.113.86) <- 200 www.msftncsi.com:80 (184 bytes)
+20180706 113525.088 [11584] PROXY 127.0.0.1:1949 error resolving hostname: ares gave back no address
+20180706 113525.088 [11584] PROXY 127.0.0.1:1949 (172.20.113.86) <- ipv6.msftncsi.com:80 connection error: libevent connection error
+
+20180706 113525.287 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) -> POST https://shavar.services.mozilla.com/downloads?client=navclient-auto-ffox&appver=47.0.1&pver=2.2 (713 bytes)
+20180706 113525.299 [11584] PROXY resolved 'shavar.services.mozilla.com' to '52.11.189.172:443'
+20180706 113525.636 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113525.647 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (595 bytes)
+20180706 113525.656 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113525.668 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (607 bytes)
+20180706 113525.672 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (462 bytes)
+20180706 113525.672 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (529 bytes)
+20180706 113525.937 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (613 bytes)
+20180706 113525.939 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (611 bytes)
+20180706 113525.940 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (599 bytes)
+20180706 113525.941 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (625 bytes)
+20180706 113525.949 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (4984 bytes)
+20180706 113526.003 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (10128 bytes)
+20180706 113526.005 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (1933 bytes)
+20180706 113526.050 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (11234 bytes)
+20180706 113526.061 [11584] PROXY 127.0.0.1:1938 (172.20.46.13) -> GET http://ipv6.msftncsi.com/ncsi.txt (266 bytes)
+20180706 113526.064 [11584] PROXY 127.0.0.1:1938 error resolving hostname: ares gave back no address
+20180706 113526.064 [11584] PROXY 127.0.0.1:1938 (172.20.46.13) <- ipv6.msftncsi.com:80 connection error: libevent connection error
+
+20180706 113526.213 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (595 bytes)
+20180706 113526.218 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (7419 bytes)
+20180706 113526.248 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113526.260 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (595 bytes)
+20180706 113526.262 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/polymer/polymer-element.html (586 bytes)
+20180706 113526.263 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (605 bytes)
+20180706 113526.266 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) <- 200 localhost:8080 (1020 bytes)
+20180706 113526.279 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113526.291 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (606 bytes)
+20180706 113526.319 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (599 bytes)
+20180706 113526.328 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (12812 bytes)
+20180706 113526.338 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (1989 bytes)
+20180706 113526.354 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (5837 bytes)
+20180706 113526.362 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) <- 200 shavar.services.mozilla.com:443 (416 bytes)
+20180706 113526.379 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (5397 bytes)
+20180706 113526.468 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (610 bytes)
+20180706 113526.508 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (598 bytes)
+20180706 113526.517 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (11687 bytes)
+20180706 113526.525 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) <- 200 localhost:8080 (2151 bytes)
+20180706 113526.570 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (572 bytes)
+20180706 113526.581 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (2432 bytes)
+20180706 113526.596 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) -> GET https://tracking-protection.cdn.mozilla.net/mozstd-track-digest256/1512580265 (603 bytes)
+20180706 113526.599 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (579 bytes)
+20180706 113526.609 [11584] PROXY resolved 'tracking-protection.cdn.mozilla.net' to '52.85.242.59:443'
+20180706 113526.621 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (6353 bytes)
+20180706 113526.649 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (586 bytes)
+20180706 113526.659 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113526.670 [11584] PROXY 127.0.0.1:1951 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (594 bytes)
+20180706 113526.677 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (3039 bytes)
+20180706 113526.713 [11584] PROXY 127.0.0.1:1951 (10.100.26.70) <- 200 localhost:8080 (10264 bytes)
+20180706 113526.720 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) <- 200 tracking-protection.cdn.mozilla.net:443 (57981 bytes)
+20180706 113526.773 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (587 bytes)
+20180706 113526.788 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) <- 200 localhost:8080 (7228 bytes)
+20180706 113526.793 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (577 bytes)
+20180706 113526.834 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (571 bytes)
+20180706 113526.854 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (34757 bytes)
+20180706 113526.858 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (587 bytes)
+20180706 113526.876 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (6241 bytes)
+20180706 113526.885 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (2907 bytes)
+20180706 113526.913 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (590 bytes)
+20180706 113526.954 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113526.965 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (596 bytes)
+20180706 113526.991 [11584] PROXY resolved 'tracking-protection.cdn.mozilla.net' to '52.85.242.59:443'
+20180706 113526.992 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) -> GET https://tracking-protection.cdn.mozilla.net/mozstd-trackwhite-digest256/1524157865 (608 bytes)
+20180706 113527.010 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (34306 bytes)
+20180706 113527.038 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (7430 bytes)
+20180706 113527.068 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (628 bytes)
+20180706 113527.095 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) <- 200 tracking-protection.cdn.mozilla.net:443 (290111 bytes)
+20180706 113527.124 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) <- 200 localhost:8080 (6277 bytes)
+20180706 113527.136 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (586 bytes)
+20180706 113527.161 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (585 bytes)
+20180706 113527.163 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (580 bytes)
+20180706 113527.166 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (917 bytes)
+20180706 113527.201 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (11539 bytes)
+20180706 113527.205 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (4220 bytes)
+20180706 113527.280 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (583 bytes)
+20180706 113527.291 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (3755 bytes)
+20180706 113527.311 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (589 bytes)
+20180706 113527.399 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (589 bytes)
+20180706 113527.410 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (574 bytes)
+20180706 113527.444 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (616 bytes)
+20180706 113527.484 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (555 bytes)
+20180706 113527.579 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (119366 bytes)
+20180706 113527.629 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (5479 bytes)
+20180706 113527.634 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (4238 bytes)
+20180706 113527.652 [11584] PROXY 127.0.0.1:1957 (10.100.26.70) <- 200 localhost:8080 (11823 bytes)
+20180706 113527.661 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (3988 bytes)
+20180706 113527.859 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (579 bytes)
+20180706 113527.870 [11584] PROXY 127.0.0.1:1937 (10.100.26.70) <- 200 localhost:8080 (8757 bytes)
+20180706 113527.873 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (590 bytes)
+20180706 113527.881 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (583 bytes)
+20180706 113527.883 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (594 bytes)
+20180706 113527.911 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (594 bytes)
+20180706 113527.920 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 200 localhost:8080 (23914 bytes)
+20180706 113527.924 [11584] PROXY 127.0.0.1:1944 (10.100.26.70) <- 200 localhost:8080 (2297 bytes)
+20180706 113527.950 [11584] PROXY 127.0.0.1:1934 (10.100.26.70) <- 200 localhost:8080 (16075 bytes)
+20180706 113527.995 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (24785 bytes)
+20180706 113528.407 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (604 bytes)
+20180706 113528.413 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (668 bytes)
+20180706 113528.443 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) -> GET http://localhost:8080/favicon.ico (521 bytes)
+20180706 113528.447 [11584] PROXY 127.0.0.1:1959 (10.100.26.70) <- 404 localhost:8080 (233 bytes)
+20180706 113528.641 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (583 bytes)
+20180706 113528.717 [11584] PROXY 127.0.0.1:1942 (10.100.26.70) <- 200 localhost:8080 (15839 bytes)
+20180706 113529.243 [11584] PROXY 127.0.0.1:1942 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (552 bytes)
+20180706 113529.247 [11584] PROXY 127.0.0.1:1942 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113529.507 [11584] PROXY 127.0.0.1:1959 (172.20.46.13) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (573 bytes)
+20180706 113529.510 [11584] PROXY 127.0.0.1:1959 (172.20.46.13) <- 304 localhost:8080 (244 bytes)
+20180706 113529.814 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (632 bytes)
+20180706 113529.817 [11584] PROXY 127.0.0.1:1944 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (638 bytes)
+20180706 113529.818 [11584] PROXY 127.0.0.1:1934 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113529.820 [11584] PROXY 127.0.0.1:1944 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113529.829 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) -> GET http://localhost:8080/favicon.ico (462 bytes)
+20180706 113529.831 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) <- 404 localhost:8080 (233 bytes)
+20180706 113530.045 [11584] PROXY 127.0.0.1:1957 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (643 bytes)
+20180706 113530.056 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.067 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (649 bytes)
+20180706 113530.070 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) -> GET http://localhost:8080/favicon.ico (462 bytes)
+20180706 113530.070 [11584] PROXY 127.0.0.1:1957 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113530.071 [11584] PROXY 127.0.0.1:1951 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113530.072 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) <- 404 localhost:8080 (233 bytes)
+20180706 113530.323 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (650 bytes)
+20180706 113530.327 [11584] PROXY 127.0.0.1:1937 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.354 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.367 [11584] PROXY 127.0.0.1:1978 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (636 bytes)
+20180706 113530.377 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.389 [11584] PROXY 127.0.0.1:1979 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (656 bytes)
+20180706 113530.399 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.410 [11584] PROXY 127.0.0.1:1980 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (642 bytes)
+20180706 113530.411 [11584] PROXY 127.0.0.1:1978 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.412 [11584] PROXY 127.0.0.1:1979 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.413 [11584] PROXY 127.0.0.1:1980 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.594 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.605 [11584] PROXY 127.0.0.1:1984 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (625 bytes)
+20180706 113530.613 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.626 [11584] PROXY 127.0.0.1:1985 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (625 bytes)
+20180706 113530.628 [11584] PROXY 127.0.0.1:1984 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.629 [11584] PROXY 127.0.0.1:1985 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.661 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.672 [11584] PROXY 127.0.0.1:1988 (172.20.46.13) -> GET http://localhost:8080/components/polymer/polymer-element.html (624 bytes)
+20180706 113530.683 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.694 [11584] PROXY 127.0.0.1:1989 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (643 bytes)
+20180706 113530.697 [11584] PROXY 127.0.0.1:1988 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.706 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.717 [11584] PROXY 127.0.0.1:1991 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (644 bytes)
+20180706 113530.728 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.739 [11584] PROXY 127.0.0.1:1992 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (654 bytes)
+20180706 113530.749 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.762 [11584] PROXY 127.0.0.1:1994 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (642 bytes)
+20180706 113530.764 [11584] PROXY 127.0.0.1:1989 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.773 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.784 [11584] PROXY 127.0.0.1:1997 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (643 bytes)
+20180706 113530.786 [11584] PROXY 127.0.0.1:1991 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.786 [11584] PROXY 127.0.0.1:1992 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.787 [11584] PROXY 127.0.0.1:1994 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.824 [11584] PROXY 127.0.0.1:1997 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113530.888 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.900 [11584] PROXY 127.0.0.1:2001 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (627 bytes)
+20180706 113530.904 [11584] PROXY 127.0.0.1:2001 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113530.943 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113530.954 [11584] PROXY 127.0.0.1:2004 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (634 bytes)
+20180706 113530.957 [11584] PROXY 127.0.0.1:2004 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.048 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.059 [11584] PROXY 127.0.0.1:2006 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (633 bytes)
+20180706 113531.069 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.080 [11584] PROXY 127.0.0.1:2007 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (627 bytes)
+20180706 113531.091 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.102 [11584] PROXY 127.0.0.1:2010 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (624 bytes)
+20180706 113531.113 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.124 [11584] PROXY 127.0.0.1:2009 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (623 bytes)
+20180706 113531.127 [11584] PROXY 127.0.0.1:2006 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.137 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.148 [11584] PROXY 127.0.0.1:2012 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (627 bytes)
+20180706 113531.150 [11584] PROXY 127.0.0.1:2007 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.159 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.170 [11584] PROXY 127.0.0.1:2018 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (624 bytes)
+20180706 113531.179 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.190 [11584] PROXY 127.0.0.1:2013 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (632 bytes)
+20180706 113531.200 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.211 [11584] PROXY 127.0.0.1:2015 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (666 bytes)
+20180706 113531.221 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.233 [11584] PROXY 127.0.0.1:2016 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (631 bytes)
+20180706 113531.235 [11584] PROXY 127.0.0.1:2010 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.235 [11584] PROXY 127.0.0.1:2009 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.244 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.255 [11584] PROXY 127.0.0.1:2024 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (631 bytes)
+20180706 113531.257 [11584] PROXY 127.0.0.1:2012 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.266 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.278 [11584] PROXY 127.0.0.1:2023 (172.20.46.13) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (632 bytes)
+20180706 113531.279 [11584] PROXY 127.0.0.1:2016 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.280 [11584] PROXY 127.0.0.1:2018 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.281 [11584] PROXY 127.0.0.1:2013 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.282 [11584] PROXY 127.0.0.1:2015 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.283 [11584] PROXY 127.0.0.1:2024 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.284 [11584] PROXY 127.0.0.1:2023 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.515 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.527 [11584] PROXY 127.0.0.1:2029 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (627 bytes)
+20180706 113531.537 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.548 [11584] PROXY 127.0.0.1:2030 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (630 bytes)
+20180706 113531.559 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.571 [11584] PROXY 127.0.0.1:2031 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (636 bytes)
+20180706 113531.580 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.592 [11584] PROXY 127.0.0.1:2034 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (636 bytes)
+20180706 113531.601 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.614 [11584] PROXY 127.0.0.1:2036 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (630 bytes)
+20180706 113531.615 [11584] PROXY 127.0.0.1:2029 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.616 [11584] PROXY 127.0.0.1:2030 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.625 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.637 [11584] PROXY 127.0.0.1:2037 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (627 bytes)
+20180706 113531.638 [11584] PROXY 127.0.0.1:2031 (172.20.46.13) <- 304 localhost:8080 (244 bytes)
+20180706 113531.639 [11584] PROXY 127.0.0.1:2034 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.639 [11584] PROXY 127.0.0.1:2036 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.640 [11584] PROXY 127.0.0.1:2037 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113531.924 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.937 [11584] PROXY 127.0.0.1:2042 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (638 bytes)
+20180706 113531.947 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.960 [11584] PROXY 127.0.0.1:2043 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (623 bytes)
+20180706 113531.969 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113531.981 [11584] PROXY 127.0.0.1:2045 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (627 bytes)
+20180706 113531.983 [11584] PROXY 127.0.0.1:2042 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113531.992 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113532.003 [11584] PROXY 127.0.0.1:2046 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (638 bytes)
+20180706 113532.013 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113532.025 [11584] PROXY 127.0.0.1:2048 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (634 bytes)
+20180706 113532.027 [11584] PROXY 127.0.0.1:2043 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113532.027 [11584] PROXY 127.0.0.1:2045 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113532.029 [11584] PROXY 127.0.0.1:2046 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113532.030 [11584] PROXY 127.0.0.1:2048 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113532.358 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113532.370 [11584] PROXY 127.0.0.1:2053 (172.20.46.13) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (574 bytes)
+20180706 113532.373 [11584] PROXY 127.0.0.1:2053 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113532.956 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113532.967 [11584] PROXY 127.0.0.1:2055 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (648 bytes)
+20180706 113532.970 [11584] PROXY 127.0.0.1:2055 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113533.237 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113533.249 [11584] PROXY 127.0.0.1:2057 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (586 bytes)
+20180706 113533.251 [11584] PROXY 127.0.0.1:2057 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113533.630 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113533.643 [11584] PROXY 127.0.0.1:2059 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (604 bytes)
+20180706 113533.645 [11584] PROXY 127.0.0.1:2059 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113533.659 [11584] PROXY 127.0.0.1:2061 (172.20.36.142) -> POST https://login.live.com/RST2.srf (5406 bytes)
+20180706 113533.665 [11584] PROXY resolved 'login.live.com' to '131.253.61.102:443'
+20180706 113534.238 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113534.250 [11584] PROXY 127.0.0.1:2063 (172.20.36.142) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (670 bytes)
+20180706 113534.252 [11584] PROXY 127.0.0.1:2063 (172.20.36.142) <- 304 localhost:8080 (244 bytes)
+20180706 113534.793 [11584] PROXY 127.0.0.1:2061 (172.20.36.142) <- 200 login.live.com:443 (10542 bytes)
+20180706 113534.824 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113534.835 [11584] PROXY 127.0.0.1:2065 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (639 bytes)
+20180706 113534.844 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113534.856 [11584] PROXY 127.0.0.1:2067 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (645 bytes)
+20180706 113534.858 [11584] PROXY 127.0.0.1:2065 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113534.859 [11584] PROXY 127.0.0.1:2067 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113535.133 [11584] PROXY 127.0.0.1:2070 (172.20.36.142) -> POST https://urs.smartscreen.microsoft.com/windows/browser/edge/service/navigate (2251 bytes)
+20180706 113535.152 [11584] PROXY resolved 'urs.smartscreen.microsoft.com' to '52.166.12.243:443'
+20180706 113535.308 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.320 [11584] PROXY 127.0.0.1:2072 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (650 bytes)
+20180706 113535.330 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.342 [11584] PROXY 127.0.0.1:2073 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (656 bytes)
+20180706 113535.343 [11584] PROXY 127.0.0.1:2072 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113535.345 [11584] PROXY 127.0.0.1:2073 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113535.727 [11584] PROXY 127.0.0.1:2070 (172.20.36.142) <- 200 urs.smartscreen.microsoft.com:443 (7148 bytes)
+20180706 113535.738 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.750 [11584] PROXY 127.0.0.1:2078 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (657 bytes)
+20180706 113535.760 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.771 [11584] PROXY 127.0.0.1:2079 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (643 bytes)
+20180706 113535.782 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.794 [11584] PROXY 127.0.0.1:2082 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (663 bytes)
+20180706 113535.804 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113535.817 [11584] PROXY 127.0.0.1:2080 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (649 bytes)
+20180706 113535.818 [11584] PROXY 127.0.0.1:2078 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113535.819 [11584] PROXY 127.0.0.1:2079 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113535.820 [11584] PROXY 127.0.0.1:2080 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113535.820 [11584] PROXY 127.0.0.1:2082 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113536.054 [11584] PROXY resolved 'urs.smartscreen.microsoft.com' to '52.166.12.243:443'
+20180706 113536.055 [11584] PROXY 127.0.0.1:2086 (172.20.36.142) -> GET https://urs.smartscreen.microsoft.com/windows/browser/edge/data/toptraffic (583 bytes)
+20180706 113536.064 [11584] PROXY resolved 'urs.smartscreen.microsoft.com' to '52.166.12.243:443'
+20180706 113536.065 [11584] PROXY 127.0.0.1:2087 (172.20.36.142) -> GET https://urs.smartscreen.microsoft.com/windows/browser/edge/data/script/2 (580 bytes)
+20180706 113536.240 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.253 [11584] PROXY 127.0.0.1:2090 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (650 bytes)
+20180706 113536.262 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.273 [11584] PROXY 127.0.0.1:2092 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (632 bytes)
+20180706 113536.282 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.295 [11584] PROXY 127.0.0.1:2093 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (650 bytes)
+20180706 113536.298 [11584] PROXY 127.0.0.1:2090 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113536.298 [11584] PROXY 127.0.0.1:2092 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113536.299 [11584] PROXY 127.0.0.1:2093 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113536.651 [11584] PROXY 127.0.0.1:2087 (172.20.36.142) <- 200 urs.smartscreen.microsoft.com:443 (25299 bytes)
+20180706 113536.695 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.707 [11584] PROXY 127.0.0.1:2097 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (661 bytes)
+20180706 113536.718 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.729 [11584] PROXY 127.0.0.1:2098 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (641 bytes)
+20180706 113536.740 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113536.752 [11584] PROXY 127.0.0.1:2099 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (649 bytes)
+20180706 113536.756 [11584] PROXY 127.0.0.1:2097 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113536.757 [11584] PROXY 127.0.0.1:2098 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113536.757 [11584] PROXY 127.0.0.1:2099 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113537.610 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.623 [11584] PROXY 127.0.0.1:2105 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (634 bytes)
+20180706 113537.632 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.644 [11584] PROXY 127.0.0.1:2106 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (631 bytes)
+20180706 113537.655 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.666 [11584] PROXY 127.0.0.1:2107 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (638 bytes)
+20180706 113537.676 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.688 [11584] PROXY 127.0.0.1:2108 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (630 bytes)
+20180706 113537.699 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.710 [11584] PROXY 127.0.0.1:2110 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (631 bytes)
+20180706 113537.712 [11584] PROXY 127.0.0.1:2105 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113537.712 [11584] PROXY 127.0.0.1:2106 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113537.712 [11584] PROXY 127.0.0.1:2107 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113537.713 [11584] PROXY 127.0.0.1:2108 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113537.714 [11584] PROXY 127.0.0.1:2110 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113537.747 [11584] PROXY 127.0.0.1:2086 (172.20.36.142) <- 200 urs.smartscreen.microsoft.com:443 (582033 bytes)
+20180706 113537.909 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.921 [11584] PROXY 127.0.0.1:2116 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (634 bytes)
+20180706 113537.931 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113537.944 [11584] PROXY 127.0.0.1:2117 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (673 bytes)
+20180706 113537.946 [11584] PROXY 127.0.0.1:2116 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113537.947 [11584] PROXY 127.0.0.1:2117 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113538.048 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.060 [11584] PROXY 127.0.0.1:2120 (172.20.36.142) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (639 bytes)
+20180706 113538.071 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.083 [11584] PROXY 127.0.0.1:2121 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (638 bytes)
+20180706 113538.084 [11584] PROXY 127.0.0.1:2120 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113538.085 [11584] PROXY 127.0.0.1:2121 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113538.232 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.244 [11584] PROXY 127.0.0.1:2124 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (639 bytes)
+20180706 113538.254 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.264 [11584] PROXY 127.0.0.1:2125 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (637 bytes)
+20180706 113538.265 [11584] PROXY 127.0.0.1:2124 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113538.274 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.286 [11584] PROXY 127.0.0.1:2127 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (634 bytes)
+20180706 113538.288 [11584] PROXY 127.0.0.1:2125 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113538.290 [11584] PROXY 127.0.0.1:2127 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113538.362 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113538.374 [11584] PROXY 127.0.0.1:2131 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (637 bytes)
+20180706 113538.376 [11584] PROXY 127.0.0.1:2131 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113539.331 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113539.342 [11584] PROXY 127.0.0.1:2135 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (632 bytes)
+20180706 113539.352 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113539.364 [11584] PROXY 127.0.0.1:2136 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (651 bytes)
+20180706 113539.374 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113539.386 [11584] PROXY 127.0.0.1:2137 (172.20.36.142) -> GET http://localhost:8080/components/polymer/polymer-element.html (631 bytes)
+20180706 113539.389 [11584] PROXY 127.0.0.1:2135 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113539.390 [11584] PROXY 127.0.0.1:2136 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113539.391 [11584] PROXY 127.0.0.1:2137 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113539.681 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113539.693 [11584] PROXY 127.0.0.1:2142 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (640 bytes)
+20180706 113539.702 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113539.714 [11584] PROXY 127.0.0.1:2143 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (634 bytes)
+20180706 113539.716 [11584] PROXY 127.0.0.1:2142 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113539.717 [11584] PROXY 127.0.0.1:2143 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.004 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.015 [11584] PROXY 127.0.0.1:2146 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (634 bytes)
+20180706 113540.026 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.037 [11584] PROXY 127.0.0.1:2147 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (643 bytes)
+20180706 113540.039 [11584] PROXY 127.0.0.1:2146 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113540.048 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.059 [11584] PROXY 127.0.0.1:2149 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (643 bytes)
+20180706 113540.061 [11584] PROXY 127.0.0.1:2147 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.062 [11584] PROXY 127.0.0.1:2149 (172.20.36.142) <- 304 localhost:8080 (244 bytes)
+20180706 113540.330 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.342 [11584] PROXY 127.0.0.1:2153 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (645 bytes)
+20180706 113540.344 [11584] PROXY 127.0.0.1:2153 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.372 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.382 [11584] PROXY 127.0.0.1:2155 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (630 bytes)
+20180706 113540.384 [11584] PROXY 127.0.0.1:2155 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.404 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.414 [11584] PROXY 127.0.0.1:2156 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (641 bytes)
+20180706 113540.423 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.434 [11584] PROXY 127.0.0.1:2158 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (634 bytes)
+20180706 113540.443 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.455 [11584] PROXY 127.0.0.1:2159 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (645 bytes)
+20180706 113540.458 [11584] PROXY 127.0.0.1:2156 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.458 [11584] PROXY 127.0.0.1:2159 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113540.459 [11584] PROXY 127.0.0.1:2158 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113540.773 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113540.785 [11584] PROXY 127.0.0.1:2164 (172.20.36.142) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (671 bytes)
+20180706 113540.788 [11584] PROXY 127.0.0.1:2164 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113541.328 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113541.329 [11584] PROXY 127.0.0.1:2167 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (655 bytes)
+20180706 113541.333 [11584] PROXY 127.0.0.1:2167 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113541.600 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113541.612 [11584] PROXY 127.0.0.1:2170 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (683 bytes)
+20180706 113541.616 [11584] PROXY 127.0.0.1:2170 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113547.048 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113547.060 [11584] PROXY 127.0.0.1:2189 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (664 bytes)
+20180706 113547.062 [11584] PROXY 127.0.0.1:2189 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113547.298 [11584] PROXY 127.0.0.1:2189 (10.100.26.70) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (646 bytes)
+20180706 113547.302 [11584] PROXY 127.0.0.1:2189 (10.100.26.70) <- 304 localhost:8080 (244 bytes)
+20180706 113547.318 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113547.330 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (679 bytes)
+20180706 113547.340 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113547.352 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (673 bytes)
+20180706 113547.353 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) <- 304 localhost:8080 (241 bytes)
+20180706 113547.355 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (241 bytes)
+20180706 113547.605 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (680 bytes)
+20180706 113547.608 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (241 bytes)
+20180706 113547.609 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (692 bytes)
+20180706 113547.611 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) <- 304 localhost:8080 (241 bytes)
+20180706 113547.732 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (588 bytes)
+20180706 113547.734 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113547.851 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (686 bytes)
+20180706 113547.853 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (711 bytes)
+20180706 113547.855 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113547.856 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113547.885 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113547.898 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (700 bytes)
+20180706 113547.907 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113547.920 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (698 bytes)
+20180706 113547.922 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113547.923 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113547.979 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (611 bytes)
+20180706 113547.981 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (244 bytes)
+20180706 113548.111 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/polymer/polymer-element.html (666 bytes)
+20180706 113548.114 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.123 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (685 bytes)
+20180706 113548.126 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.142 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.154 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (686 bytes)
+20180706 113548.164 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.176 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (697 bytes)
+20180706 113548.178 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (684 bytes)
+20180706 113548.179 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.180 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.180 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.185 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (682 bytes)
+20180706 113548.188 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.271 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (667 bytes)
+20180706 113548.281 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.293 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (673 bytes)
+20180706 113548.295 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113548.296 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113548.344 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.356 [11584] PROXY 127.0.0.1:2211 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (525 bytes)
+20180706 113548.360 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (681 bytes)
+20180706 113548.362 [11584] PROXY 127.0.0.1:2211 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113548.362 [11584] PROXY 127.0.0.1:2194 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.390 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (692 bytes)
+20180706 113548.394 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.410 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (658 bytes)
+20180706 113548.413 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.425 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (664 bytes)
+20180706 113548.428 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (672 bytes)
+20180706 113548.429 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (673 bytes)
+20180706 113548.430 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.431 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.432 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.516 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (678 bytes)
+20180706 113548.519 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113548.520 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (684 bytes)
+20180706 113548.522 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (241 bytes)
+20180706 113548.583 [11584] PROXY 127.0.0.1:2194 (172.20.113.86) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (591 bytes)
+20180706 113548.586 [11584] PROXY 127.0.0.1:2194 (172.20.113.86) <- 304 localhost:8080 (244 bytes)
+20180706 113548.613 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.624 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (677 bytes)
+20180706 113548.626 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (683 bytes)
+20180706 113548.627 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.628 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.646 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (715 bytes)
+20180706 113548.648 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.678 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (658 bytes)
+20180706 113548.682 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (681 bytes)
+20180706 113548.683 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (666 bytes)
+20180706 113548.685 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.685 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.686 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.736 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (687 bytes)
+20180706 113548.738 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (673 bytes)
+20180706 113548.740 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113548.741 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113548.762 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.774 [11584] PROXY 127.0.0.1:2216 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (692 bytes)
+20180706 113548.784 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.796 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (679 bytes)
+20180706 113548.798 [11584] PROXY 127.0.0.1:2216 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113548.800 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113548.854 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (674 bytes)
+20180706 113548.856 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.859 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (666 bytes)
+20180706 113548.860 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.904 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (671 bytes)
+20180706 113548.914 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.925 [11584] PROXY 127.0.0.1:2221 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (560 bytes)
+20180706 113548.934 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113548.945 [11584] PROXY 127.0.0.1:2222 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (566 bytes)
+20180706 113548.947 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (669 bytes)
+20180706 113548.948 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.949 [11584] PROXY 127.0.0.1:2221 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113548.949 [11584] PROXY 127.0.0.1:2222 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113548.950 [11584] PROXY 127.0.0.1:2200 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113548.967 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (677 bytes)
+20180706 113548.969 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (676 bytes)
+20180706 113548.971 [11584] PROXY 127.0.0.1:2201 (10.100.26.70) <- 304 localhost:8080 (244 bytes)
+20180706 113548.972 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113548.978 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (662 bytes)
+20180706 113548.980 [11584] PROXY 127.0.0.1:2189 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113548.988 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (661 bytes)
+20180706 113548.999 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.011 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) -> GET http://localhost:8080/components/polymer/polymer-element.html (660 bytes)
+20180706 113549.020 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.032 [11584] PROXY 127.0.0.1:2226 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (679 bytes)
+20180706 113549.034 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.043 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.055 [11584] PROXY 127.0.0.1:2227 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (680 bytes)
+20180706 113549.064 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.077 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (691 bytes)
+20180706 113549.086 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.097 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (678 bytes)
+20180706 113549.098 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (660 bytes)
+20180706 113549.099 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.107 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.119 [11584] PROXY 127.0.0.1:2232 (172.20.113.86) -> GET http://localhost:8080/favicon.ico (366 bytes)
+20180706 113549.120 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (680 bytes)
+20180706 113549.121 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (702 bytes)
+20180706 113549.123 [11584] PROXY 127.0.0.1:2226 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.124 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.124 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.125 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.125 [11584] PROXY 127.0.0.1:2227 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.126 [11584] PROXY 127.0.0.1:2195 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.127 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.127 [11584] PROXY 127.0.0.1:2232 (172.20.113.86) <- 404 localhost:8080 (233 bytes)
+20180706 113549.186 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (672 bytes)
+20180706 113549.188 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.204 [11584] PROXY 127.0.0.1:2189 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (571 bytes)
+20180706 113549.207 [11584] PROXY 127.0.0.1:2189 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113549.209 [11584] PROXY 127.0.0.1:2201 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (663 bytes)
+20180706 113549.210 [11584] PROXY 127.0.0.1:2200 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (671 bytes)
+20180706 113549.211 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (681 bytes)
+20180706 113549.212 [11584] PROXY 127.0.0.1:2201 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.213 [11584] PROXY 127.0.0.1:2214 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113549.213 [11584] PROXY 127.0.0.1:2200 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.226 [11584] PROXY 127.0.0.1:2216 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (577 bytes)
+20180706 113549.228 [11584] PROXY 127.0.0.1:2216 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113549.245 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.256 [11584] PROXY 127.0.0.1:2238 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (666 bytes)
+20180706 113549.266 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.278 [11584] PROXY 127.0.0.1:2239 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (669 bytes)
+20180706 113549.280 [11584] PROXY 127.0.0.1:2238 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113549.281 [11584] PROXY 127.0.0.1:2239 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.354 [11584] PROXY 127.0.0.1:2227 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (677 bytes)
+20180706 113549.358 [11584] PROXY 127.0.0.1:2227 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113549.359 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (681 bytes)
+20180706 113549.360 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (670 bytes)
+20180706 113549.361 [11584] PROXY 127.0.0.1:2232 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (664 bytes)
+20180706 113549.363 [11584] PROXY 127.0.0.1:2205 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113549.364 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.364 [11584] PROXY 127.0.0.1:2232 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.367 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (659 bytes)
+20180706 113549.368 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (664 bytes)
+20180706 113549.369 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (660 bytes)
+20180706 113549.371 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.371 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.372 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.382 [11584] PROXY 127.0.0.1:2226 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (703 bytes)
+20180706 113549.385 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (668 bytes)
+20180706 113549.386 [11584] PROXY 127.0.0.1:2226 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.387 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.392 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (661 bytes)
+20180706 113549.401 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.413 [11584] PROXY 127.0.0.1:2243 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (669 bytes)
+20180706 113549.415 [11584] PROXY 127.0.0.1:2208 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.416 [11584] PROXY 127.0.0.1:2243 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.422 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (641 bytes)
+20180706 113549.425 [11584] PROXY 127.0.0.1:2204 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.427 [11584] PROXY 127.0.0.1:2200 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (578 bytes)
+20180706 113549.428 [11584] PROXY 127.0.0.1:2200 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.434 [11584] PROXY 127.0.0.1:2214 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (564 bytes)
+20180706 113549.436 [11584] PROXY 127.0.0.1:2214 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.445 [11584] PROXY 127.0.0.1:2201 (172.20.46.13) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (668 bytes)
+20180706 113549.455 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.467 [11584] PROXY 127.0.0.1:2245 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (668 bytes)
+20180706 113549.470 [11584] PROXY 127.0.0.1:2201 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.470 [11584] PROXY 127.0.0.1:2245 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.505 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.517 [11584] PROXY 127.0.0.1:2247 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (584 bytes)
+20180706 113549.527 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.539 [11584] PROXY 127.0.0.1:2248 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (570 bytes)
+20180706 113549.540 [11584] PROXY 127.0.0.1:2247 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.542 [11584] PROXY 127.0.0.1:2248 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.590 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (663 bytes)
+20180706 113549.593 [11584] PROXY 127.0.0.1:2232 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (673 bytes)
+20180706 113549.594 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (674 bytes)
+20180706 113549.596 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (666 bytes)
+20180706 113549.598 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.599 [11584] PROXY 127.0.0.1:2232 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.600 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.600 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) <- 304 localhost:8080 (244 bytes)
+20180706 113549.601 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (663 bytes)
+20180706 113549.603 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.606 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (666 bytes)
+20180706 113549.607 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.664 [11584] PROXY 127.0.0.1:2204 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (553 bytes)
+20180706 113549.666 [11584] PROXY 127.0.0.1:2243 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (553 bytes)
+20180706 113549.668 [11584] PROXY 127.0.0.1:2204 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.669 [11584] PROXY 127.0.0.1:2243 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.689 [11584] PROXY 127.0.0.1:2245 (172.20.113.86) -> GET http://localhost:8080/components/polymer/polymer-element.html (552 bytes)
+20180706 113549.692 [11584] PROXY 127.0.0.1:2201 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (571 bytes)
+20180706 113549.693 [11584] PROXY 127.0.0.1:2245 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.694 [11584] PROXY 127.0.0.1:2226 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (572 bytes)
+20180706 113549.695 [11584] PROXY 127.0.0.1:2208 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (582 bytes)
+20180706 113549.698 [11584] PROXY 127.0.0.1:2201 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.699 [11584] PROXY 127.0.0.1:2208 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.699 [11584] PROXY 127.0.0.1:2226 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.731 [11584] PROXY 127.0.0.1:2205 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (570 bytes)
+20180706 113549.734 [11584] PROXY 127.0.0.1:2205 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.797 [11584] PROXY 127.0.0.1:2227 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (571 bytes)
+20180706 113549.799 [11584] PROXY 127.0.0.1:2227 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.814 [11584] PROXY 127.0.0.1:2232 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (690 bytes)
+20180706 113549.817 [11584] PROXY 127.0.0.1:2232 (10.100.26.70) <- 304 localhost:8080 (242 bytes)
+20180706 113549.836 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (660 bytes)
+20180706 113549.839 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (675 bytes)
+20180706 113549.840 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (663 bytes)
+20180706 113549.841 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (675 bytes)
+20180706 113549.842 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (671 bytes)
+20180706 113549.844 [11584] PROXY 127.0.0.1:2225 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.844 [11584] PROXY 127.0.0.1:2230 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.845 [11584] PROXY 127.0.0.1:2217 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.845 [11584] PROXY 127.0.0.1:2195 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113549.846 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113549.905 [11584] PROXY 127.0.0.1:2239 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (555 bytes)
+20180706 113549.907 [11584] PROXY 127.0.0.1:2238 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (562 bytes)
+20180706 113549.909 [11584] PROXY 127.0.0.1:2239 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113549.910 [11584] PROXY 127.0.0.1:2238 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113549.968 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113549.980 [11584] PROXY 127.0.0.1:2254 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (561 bytes)
+20180706 113549.989 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.002 [11584] PROXY 127.0.0.1:2256 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (551 bytes)
+20180706 113550.011 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.023 [11584] PROXY 127.0.0.1:2255 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (555 bytes)
+20180706 113550.032 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.044 [11584] PROXY 127.0.0.1:2258 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (552 bytes)
+20180706 113550.045 [11584] PROXY 127.0.0.1:2254 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.054 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.067 [11584] PROXY 127.0.0.1:2260 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (555 bytes)
+20180706 113550.076 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.089 [11584] PROXY 127.0.0.1:2261 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (560 bytes)
+20180706 113550.100 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.112 [11584] PROXY 127.0.0.1:2263 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (594 bytes)
+20180706 113550.121 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.134 [11584] PROXY 127.0.0.1:2265 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (559 bytes)
+20180706 113550.136 [11584] PROXY 127.0.0.1:2232 (10.100.26.70) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (670 bytes)
+20180706 113550.137 [11584] PROXY 127.0.0.1:2256 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.138 [11584] PROXY 127.0.0.1:2255 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.147 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.160 [11584] PROXY 127.0.0.1:2267 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (552 bytes)
+20180706 113550.162 [11584] PROXY 127.0.0.1:2258 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.162 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (610 bytes)
+20180706 113550.164 [11584] PROXY 127.0.0.1:2195 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (559 bytes)
+20180706 113550.165 [11584] PROXY 127.0.0.1:2230 (172.20.113.86) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (560 bytes)
+20180706 113550.166 [11584] PROXY 127.0.0.1:2263 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.167 [11584] PROXY 127.0.0.1:2261 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.168 [11584] PROXY 127.0.0.1:2265 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.168 [11584] PROXY 127.0.0.1:2260 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.169 [11584] PROXY 127.0.0.1:2232 (10.100.26.70) <- 304 localhost:8080 (243 bytes)
+20180706 113550.170 [11584] PROXY 127.0.0.1:2267 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.171 [11584] PROXY 127.0.0.1:2230 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.171 [11584] PROXY 127.0.0.1:2195 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.172 [11584] PROXY 127.0.0.1:2229 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113550.373 [11584] PROXY 127.0.0.1:2217 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (555 bytes)
+20180706 113550.376 [11584] PROXY 127.0.0.1:2217 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.385 [11584] PROXY 127.0.0.1:2225 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (558 bytes)
+20180706 113550.388 [11584] PROXY 127.0.0.1:2225 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.390 [11584] PROXY 127.0.0.1:2232 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (564 bytes)
+20180706 113550.392 [11584] PROXY 127.0.0.1:2229 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (564 bytes)
+20180706 113550.393 [11584] PROXY 127.0.0.1:2232 (172.20.113.86) <- 304 localhost:8080 (244 bytes)
+20180706 113550.393 [11584] PROXY 127.0.0.1:2229 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.445 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.457 [11584] PROXY 127.0.0.1:2273 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (558 bytes)
+20180706 113550.460 [11584] PROXY 127.0.0.1:2273 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.485 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.499 [11584] PROXY 127.0.0.1:2275 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (555 bytes)
+20180706 113550.502 [11584] PROXY 127.0.0.1:2275 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.675 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.687 [11584] PROXY 127.0.0.1:2277 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (551 bytes)
+20180706 113550.698 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.709 [11584] PROXY 127.0.0.1:2278 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (555 bytes)
+20180706 113550.717 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.730 [11584] PROXY 127.0.0.1:2280 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (566 bytes)
+20180706 113550.738 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.740 [11584] PROXY 127.0.0.1:2281 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (562 bytes)
+20180706 113550.741 [11584] PROXY 127.0.0.1:2277 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.750 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.761 [11584] PROXY 127.0.0.1:2282 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (566 bytes)
+20180706 113550.763 [11584] PROXY 127.0.0.1:2281 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.763 [11584] PROXY 127.0.0.1:2280 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.764 [11584] PROXY 127.0.0.1:2278 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113550.773 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113550.785 [11584] PROXY 127.0.0.1:2285 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (684 bytes)
+20180706 113550.788 [11584] PROXY 127.0.0.1:2282 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113550.788 [11584] PROXY 127.0.0.1:2285 (172.20.46.13) <- 304 localhost:8080 (242 bytes)
+20180706 113551.040 [11584] PROXY 127.0.0.1:2285 (172.20.46.13) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (623 bytes)
+20180706 113551.043 [11584] PROXY 127.0.0.1:2285 (172.20.46.13) <- 304 localhost:8080 (243 bytes)
+20180706 113551.119 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113551.131 [11584] PROXY 127.0.0.1:2291 (172.20.113.86) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (592 bytes)
+20180706 113551.133 [11584] PROXY 127.0.0.1:2291 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113551.713 [11584] PROXY 127.0.0.1:2285 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (576 bytes)
+20180706 113551.716 [11584] PROXY 127.0.0.1:2285 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113551.971 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113551.983 [11584] PROXY 127.0.0.1:2295 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (604 bytes)
+20180706 113551.986 [11584] PROXY 127.0.0.1:2295 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113552.065 [11584] PROXY 127.0.0.1:2297 (172.20.113.86) -> GET https://iecvlist.microsoft.com/ie11blocklist/1401746408/versionlist.xml (430 bytes)
+20180706 113552.067 [11584] PROXY resolved 'iecvlist.microsoft.com' to '152.199.19.161:443'
+20180706 113552.109 [11584] PROXY 127.0.0.1:2297 (172.20.113.86) <- 200 iecvlist.microsoft.com:443 (16286 bytes)
+20180706 113553.681 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113553.693 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (640 bytes)
+20180706 113553.695 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113553.941 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (708 bytes)
+20180706 113553.944 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (244 bytes)
+20180706 113554.513 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (674 bytes)
+20180706 113554.523 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113554.536 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (680 bytes)
+20180706 113554.539 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113554.539 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113554.788 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (691 bytes)
+20180706 113554.790 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (685 bytes)
+20180706 113554.792 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113554.794 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (241 bytes)
+20180706 113555.069 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (699 bytes)
+20180706 113555.071 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (694 bytes)
+20180706 113555.073 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.074 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.088 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113555.099 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (686 bytes)
+20180706 113555.109 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113555.120 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (680 bytes)
+20180706 113555.122 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.125 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.321 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (668 bytes)
+20180706 113555.324 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (669 bytes)
+20180706 113555.326 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.327 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.387 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/polymer/polymer-element.html (667 bytes)
+20180706 113555.391 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.400 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (687 bytes)
+20180706 113555.402 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.418 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113555.430 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (687 bytes)
+20180706 113555.439 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113555.451 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (685 bytes)
+20180706 113555.454 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.455 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.645 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (686 bytes)
+20180706 113555.648 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (670 bytes)
+20180706 113555.650 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (678 bytes)
+20180706 113555.651 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (698 bytes)
+20180706 113555.653 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.654 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.654 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.655 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.691 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (677 bytes)
+20180706 113555.694 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.730 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (671 bytes)
+20180706 113555.732 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.945 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (675 bytes)
+20180706 113555.947 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (668 bytes)
+20180706 113555.948 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (676 bytes)
+20180706 113555.949 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (666 bytes)
+20180706 113555.950 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (710 bytes)
+20180706 113555.951 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.953 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.954 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.954 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113555.955 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113555.967 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (667 bytes)
+20180706 113555.969 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.235 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (675 bytes)
+20180706 113556.238 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (673 bytes)
+20180706 113556.239 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (671 bytes)
+20180706 113556.240 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (681 bytes)
+20180706 113556.241 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (675 bytes)
+20180706 113556.242 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (680 bytes)
+20180706 113556.244 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.245 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.245 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.246 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.247 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (244 bytes)
+20180706 113556.247 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.448 [11584] PROXY 127.0.0.1:2318 (172.20.36.142) -> GET https://c.urs.microsoft.com/l1.dat?v=3&cv=Microsoft.MicrosoftEdge_40.15063.0.0_neutral__8wekyb3d8bbwe&os=10.0.15063.0.0&pg=379BDC39-D58D-44AA-986B-FD2CBFFA75A6 (624 bytes)
+20180706 113556.464 [11584] PROXY resolved 'c.urs.microsoft.com' to '52.169.17.81:443'
+20180706 113556.525 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (673 bytes)
+20180706 113556.528 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (682 bytes)
+20180706 113556.529 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (670 bytes)
+20180706 113556.530 [11584] PROXY 127.0.0.1:2307 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.531 [11584] PROXY 127.0.0.1:2303 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.531 [11584] PROXY 127.0.0.1:2297 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.534 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (670 bytes)
+20180706 113556.535 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.554 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (670 bytes)
+20180706 113556.557 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113556.591 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (682 bytes)
+20180706 113556.594 [11584] PROXY 127.0.0.1:2311 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.700 [11584] PROXY 127.0.0.1:2318 (172.20.36.142) <- 200 c.urs.microsoft.com:443 (34186 bytes)
+20180706 113556.804 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (678 bytes)
+20180706 113556.806 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (667 bytes)
+20180706 113556.810 [11584] PROXY 127.0.0.1:2308 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113556.812 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113557.077 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (707 bytes)
+20180706 113557.079 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113557.679 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (691 bytes)
+20180706 113557.683 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (242 bytes)
+20180706 113558.002 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (720 bytes)
+20180706 113558.004 [11584] PROXY 127.0.0.1:2312 (172.20.36.142) <- 304 localhost:8080 (243 bytes)
+20180706 113606.826 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113606.837 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/test/visual/default.html (561 bytes)
+20180706 113606.840 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113607.065 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/webcomponentsjs/webcomponents-lite.js (629 bytes)
+20180706 113607.068 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (244 bytes)
+20180706 113607.350 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox.html (595 bytes)
+20180706 113607.353 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113607.378 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113607.389 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/vaadin-checkbox-group.html (601 bytes)
+20180706 113607.392 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113607.411 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113607.423 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) -> GET http://localhost:8080/favicon.ico (366 bytes)
+20180706 113607.426 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) <- 404 localhost:8080 (233 bytes)
+20180706 113607.578 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox.html (606 bytes)
+20180706 113607.581 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113607.622 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group.html (612 bytes)
+20180706 113607.624 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (241 bytes)
+20180706 113607.800 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-styles.html (615 bytes)
+20180706 113607.804 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113607.834 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox.html (601 bytes)
+20180706 113607.836 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113607.882 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/theme/lumo/vaadin-checkbox-group-styles.html (620 bytes)
+20180706 113607.892 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113607.904 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-checkbox/src/vaadin-checkbox-group.html (607 bytes)
+20180706 113607.906 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113607.908 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.034 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/color.html (590 bytes)
+20180706 113608.038 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.056 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.067 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/style.html (589 bytes)
+20180706 113608.070 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.071 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) -> GET http://localhost:8080/components/polymer/polymer-element.html (588 bytes)
+20180706 113608.072 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.104 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.116 [11584] PROXY 127.0.0.1:2354 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-element-mixin/vaadin-element-mixin.html (606 bytes)
+20180706 113608.126 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.138 [11584] PROXY 127.0.0.1:2355 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/gesture-event-listeners.html (607 bytes)
+20180706 113608.147 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.159 [11584] PROXY 127.0.0.1:2356 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-control-state-mixin/vaadin-control-state-mixin.html (619 bytes)
+20180706 113608.168 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.181 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-themable-mixin/vaadin-themable-mixin.html (608 bytes)
+20180706 113608.185 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/flattened-nodes-observer.html (608 bytes)
+20180706 113608.186 [11584] PROXY 127.0.0.1:2354 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.186 [11584] PROXY 127.0.0.1:2355 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.187 [11584] PROXY 127.0.0.1:2356 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.188 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.188 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.277 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-lumo-styles/version.html (591 bytes)
+20180706 113608.279 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/elements/custom-style.html (599 bytes)
+20180706 113608.281 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.281 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.300 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/element-mixin.html (598 bytes)
+20180706 113608.303 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.338 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/html-tag.html (592 bytes)
+20180706 113608.341 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.411 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-development-mode-detector/vaadin-development-mode-detector.html (631 bytes)
+20180706 113608.413 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.433 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/boot.html (587 bytes)
+20180706 113608.435 [11584] PROXY 127.0.0.1:2356 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/array-splice.html (596 bytes)
+20180706 113608.436 [11584] PROXY 127.0.0.1:2355 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/async.html (589 bytes)
+20180706 113608.438 [11584] PROXY 127.0.0.1:2354 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/mixin.html (588 bytes)
+20180706 113608.439 [11584] PROXY 127.0.0.1:2355 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.441 [11584] PROXY 127.0.0.1:2356 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.441 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.443 [11584] PROXY 127.0.0.1:2354 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.459 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.471 [11584] PROXY 127.0.0.1:2363 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/gestures.html (592 bytes)
+20180706 113608.481 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.494 [11584] PROXY 127.0.0.1:2364 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/elements/dom-module.html (597 bytes)
+20180706 113608.494 [11584] PROXY 127.0.0.1:2363 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.496 [11584] PROXY 127.0.0.1:2364 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.521 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) -> GET http://localhost:8080/components/shadycss/custom-style-interface.html (596 bytes)
+20180706 113608.523 [11584] PROXY 127.0.0.1:2346 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.550 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/style-gather.html (596 bytes)
+20180706 113608.553 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.560 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/settings.html (591 bytes)
+20180706 113608.563 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.574 [11584] PROXY resolved 'localhost' to '127.0.0.1:8080'
+20180706 113608.585 [11584] PROXY 127.0.0.1:2367 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/resolve-url.html (594 bytes)
+20180706 113608.587 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/property-effects.html (602 bytes)
+20180706 113608.589 [11584] PROXY 127.0.0.1:2367 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.589 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) <- 304 localhost:8080 (244 bytes)
+20180706 113608.625 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-mixin.html (601 bytes)
+20180706 113608.629 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.665 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/import-href.html (594 bytes)
+20180706 113608.668 [11584] PROXY 127.0.0.1:2350 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.727 [11584] PROXY 127.0.0.1:2364 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/debounce.html (591 bytes)
+20180706 113608.730 [11584] PROXY 127.0.0.1:2364 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.846 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/path.html (588 bytes)
+20180706 113608.849 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/utils/case-map.html (591 bytes)
+20180706 113608.851 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/template-stamp.html (599 bytes)
+20180706 113608.852 [11584] PROXY 127.0.0.1:2358 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.853 [11584] PROXY 127.0.0.1:2367 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/property-accessors.html (603 bytes)
+20180706 113608.855 [11584] PROXY 127.0.0.1:2352 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113608.855 [11584] PROXY 127.0.0.1:2367 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.856 [11584] PROXY 127.0.0.1:2342 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113608.881 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/polymer/lib/mixins/properties-changed.html (603 bytes)
+20180706 113608.884 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113609.183 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/shadycss/custom-style-interface.min.js (628 bytes)
+20180706 113609.186 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113609.783 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.html (612 bytes)
+20180706 113609.786 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (242 bytes)
+20180706 113610.017 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) -> GET http://localhost:8080/components/vaadin-usage-statistics/vaadin-usage-statistics.js (641 bytes)
+20180706 113610.020 [11584] PROXY 127.0.0.1:2344 (172.20.113.86) <- 304 localhost:8080 (243 bytes)
+20180706 113623.084 [11584] Remote tunnel VM has been terminated by user request. Shutting down.
+20180706 113623.084 [11584] Cleaning up.
+20180706 113623.085 [11584] Removing tunnel 51149996b76e4dfa9692b549cf353d94.
+20180706 113623.085 [11584] Waiting for any active jobs using this tunnel to finish.
+20180706 113623.085 [11584] Press CTRL-C again to shut down immediately.
+20180706 113623.085 [11584] Note: if you do this, tests that are still running will fail.
+20180706 113623.310 [11584] Number of jobs using tunnel: 2.
