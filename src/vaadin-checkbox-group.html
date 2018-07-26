@@ -108,8 +108,8 @@ This program is available under Apache License Version 2.0, available at https:/
             },
 
             /**
-            * String used for the label element.
-            */
+             * String used for the label element.
+             */
             label: {
               type: String,
               value: '',
@@ -118,10 +118,14 @@ This program is available under Apache License Version 2.0, available at https:/
 
             /**
              * Value of the checkbox group.
+             * Note: toggling the checkboxes modifies the value by creating new
+             * array each time, to override Polymer dirty-checking for arrays.
+             * You can still use Polymer array mutations method for update value.
              */
             value: {
               type: Array,
               value: () => [],
+              observer: '_valueChanged',
               notify: true
             },
 
@@ -156,7 +160,7 @@ This program is available under Apache License Version 2.0, available at https:/
 
         static get observers() {
           return [
-            '_valueChanged(value, value.splices)'
+            '_splicesChanged(value, value.splices)'
           ];
         }
 
@@ -230,12 +234,16 @@ This program is available under Apache License Version 2.0, available at https:/
         }
 
         _addCheckboxToValue(value) {
-          this.push('value', value);
+          const update = this.value.slice(0);
+          update.push(value);
+          this.value = update;
         }
 
         _removeCheckboxFromValue(value) {
-          const index = this.value.indexOf(value);
-          this.splice('value', index, 1);
+          const update = this.value.slice(0);
+          const index = update.indexOf(value);
+          update.splice(index, 1);
+          this.value = update;
         }
 
         _changeSelectedCheckbox(checkbox) {
@@ -248,11 +256,10 @@ This program is available under Apache License Version 2.0, available at https:/
           } else {
             this._removeCheckboxFromValue(checkbox.value);
           }
-
         }
 
-        _valueChanged(newV, oldV) {
-          // setting initial value to empty string, skip validation
+        _updateValue(newV, oldV) {
+          // setting initial value to empty array, skip validation
           if (newV.length === 0 && oldV === undefined) {
             return;
           }
@@ -263,8 +270,16 @@ This program is available under Apache License Version 2.0, available at https:/
             checkbox.checked = newV.indexOf(checkbox.value) > -1;
           });
           this._updatingValue = false;
-    
+
           this.validate();
+        }
+
+        _splicesChanged(newV, oldV) {
+          this._updateValue(newV, oldV);
+        }
+
+        _valueChanged(newV, oldV) {
+          this._updateValue(newV, oldV);
         }
 
         _labelChanged(label) {
