@@ -167,6 +167,8 @@ This program is available under Apache License Version 2.0, available at https:/
         ready() {
           super.ready();
 
+          this._flow = false;
+
           this.addEventListener('focusout', e => {
             // validate when stepping out of the checkbox group
             if (!this._checkboxes.some(checkbox => e.relatedTarget === checkbox || checkbox.shadowRoot.contains(e.relatedTarget))) {
@@ -186,14 +188,20 @@ This program is available under Apache License Version 2.0, available at https:/
               if (this.disabled) {
                 checkbox.disabled = true;
               }
-              if (checkbox.checked) {
+              if (this._flow) {
+                checkbox.checked = this.value.indexOf(checkbox.value) > -1;
+              }
+              else if (checkbox.checked) {
                 this._addCheckboxToValue(checkbox.value);
               }
             });
 
             this._filterCheckboxes(info.removedNodes).forEach(checkbox => {
               checkbox.removeEventListener('checked-changed', checkedChangedListener);
-              if (checkbox.checked) {
+              if (this._flow) {
+                checkbox.checked = this.value.indexOf(checkbox.value) > -1;
+              }
+              else if (checkbox.checked) {
                 this._removeCheckboxFromValue(checkbox.value);
               }
             });
@@ -232,14 +240,20 @@ This program is available under Apache License Version 2.0, available at https:/
 
         _addCheckboxToValue(value) {
           const update = this.value.slice(0);
-          update.push(value);
+          if (update.indexOf(value == -1))
+          {
+            update.push(value);
+          }
           this.value = update;
         }
 
         _removeCheckboxFromValue(value) {
           const update = this.value.slice(0);
           const index = update.indexOf(value);
-          update.splice(index, 1);
+          if (index != -1)
+          {
+            update.splice(index, 1);
+          }
           this.value = update;
         }
 
