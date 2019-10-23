@@ -17,9 +17,9 @@
     <vaadin-demo-snippet>
       <template preserve-content>
         <vaadin-checkbox-group label="Label" theme="vertical">
-          <vaadin-checkbox value="Option one" checked>Option one</vaadin-checkbox>
-          <vaadin-checkbox value="Option two">Option two</vaadin-checkbox>
-          <vaadin-checkbox value="Option three">Option three</vaadin-checkbox>
+          <vaadin-checkbox value="1" checked>Option one</vaadin-checkbox>
+          <vaadin-checkbox value="2">Option two</vaadin-checkbox>
+          <vaadin-checkbox value="3">Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
       </template>
     </vaadin-demo-snippet>
@@ -28,15 +28,15 @@
     <vaadin-demo-snippet>
       <template preserve-content>
         <vaadin-checkbox-group label="Disabled" theme="vertical" disabled>
-          <vaadin-checkbox value="Option one" checked>Option one</vaadin-checkbox>
-          <vaadin-checkbox value="Option two">Option two</vaadin-checkbox>
-          <vaadin-checkbox value="Option three">Option three</vaadin-checkbox>
+          <vaadin-checkbox value="1" checked>Option one</vaadin-checkbox>
+          <vaadin-checkbox value="2">Option two</vaadin-checkbox>
+          <vaadin-checkbox value="3">Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
 
         <vaadin-checkbox-group label="Disabled item" theme="vertical">
-          <vaadin-checkbox value="Option one">Option one</vaadin-checkbox>
-          <vaadin-checkbox value="Option two">Option two</vaadin-checkbox>
-          <vaadin-checkbox value="Option three" disabled>Option three</vaadin-checkbox>
+          <vaadin-checkbox value="1">Option one</vaadin-checkbox>
+          <vaadin-checkbox value="2">Option two</vaadin-checkbox>
+          <vaadin-checkbox value="3" disabled>Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
         <style>
           vaadin-checkbox-group:first-of-type {
@@ -74,9 +74,9 @@
     <vaadin-demo-snippet id="value-change-event" when-defined="vaadin-radio-button">
       <template preserve-content>
         <vaadin-checkbox-group label="Label" theme="vertical">
-          <vaadin-checkbox value="Option one">Option one</vaadin-checkbox>
-          <vaadin-checkbox value="Option two">Option two</vaadin-checkbox>
-          <vaadin-checkbox value="Option three">Option three</vaadin-checkbox>
+          <vaadin-checkbox value="1">Option one</vaadin-checkbox>
+          <vaadin-checkbox value="2">Option two</vaadin-checkbox>
+          <vaadin-checkbox value="3">Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
         <div id="output">Selected value:</div>
         <script>
@@ -101,8 +101,8 @@
       <template preserve-content>
         <vaadin-checkbox-group label="Label" theme="vertical">
           <vaadin-checkbox class="select-all">Select All</vaadin-checkbox>
-          <vaadin-checkbox value="one">Option one</vaadin-checkbox>
-          <vaadin-checkbox value="two">Option two</vaadin-checkbox>
+          <vaadin-checkbox value="1">Option one</vaadin-checkbox>
+          <vaadin-checkbox value="2">Option two</vaadin-checkbox>
           <script>
             window.addDemoReadyListener('#checkbox-indeterminate', function(document) {
               const options = Array.from(document.querySelectorAll('vaadin-checkbox[value]'));
