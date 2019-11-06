@@ -9,17 +9,16 @@
     <h3>Required</h3>
     <vaadin-demo-snippet id="checkbox-required" when-defined="vaadin-checkbox-group">
       <template preserve-content>
-        <vaadin-checkbox-group label="Required" required error-message="Please choose one option" theme="vertical"
-          id="checkboxGroup">
+        <vaadin-checkbox-group label="Required" required error-message="Please choose one option" theme="vertical">
           <vaadin-checkbox value="1">Option one</vaadin-checkbox>
           <vaadin-checkbox value="2">Option two</vaadin-checkbox>
           <vaadin-checkbox value="3">Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
-        <vaadin-button id="submit">Submit</vaadin-button>
+        <vaadin-button>Submit</vaadin-button>
         <script>
           window.addDemoReadyListener('#checkbox-required', function(document) {
-            var submit = document.getElementById('submit');
-            var checkboxGroup = document.getElementById('checkboxGroup');
+            const submit = document.querySelector('vaadin-button');
+            const checkboxGroup = document.querySelector('vaadin-checkbox-group');
             submit.addEventListener('click', function(event) {
               checkboxGroup.validate();
             });
