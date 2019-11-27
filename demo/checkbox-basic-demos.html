@@ -73,11 +73,11 @@
     <vaadin-demo-snippet id="value-change-event" when-defined="vaadin-radio-button">
       <template preserve-content>
         <vaadin-checkbox-group label="Label" theme="vertical">
-          <vaadin-checkbox value="Option one">Option one</vaadin-checkbox>
-          <vaadin-checkbox value="Option two">Option two</vaadin-checkbox>
-          <vaadin-checkbox value="Option three">Option three</vaadin-checkbox>
+          <vaadin-checkbox value = "1">Option one</vaadin-checkbox>
+          <vaadin-checkbox value = "2">Option two</vaadin-checkbox>
+          <vaadin-checkbox value = "3">Option three</vaadin-checkbox>
         </vaadin-checkbox-group>
-        <div id="output">Selected value:</div>
+        <div>Selected value: <span id="output"></span></div>
         <script>
           window.addDemoReadyListener('#value-change-event', function(document) {
             const checkboxGroup = document.querySelector('vaadin-checkbox-group');
