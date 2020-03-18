@@ -70,6 +70,10 @@
           expect(vaadinCheckbox.getAttribute('aria-checked')).to.be.eql('mixed');
         });
 
+        it('should set aria-checked to false when setting checked property is null', () => {
+          vaadinCheckbox.checked = null;
+          expect(vaadinCheckbox.getAttribute('aria-checked')).to.eql('false');
+        });
       });
 
     });
