@@ -1,0 +1,47 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>vaadin-checkbox-group tests</title>
+  <script src="../../web-component-tester/browser.js"></script>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../iron-test-helpers/mock-interactions.html">
+  <link rel="import" href="../../iron-form/iron-form.html">
+  <link rel="import" href="../../test-fixture/test-fixture.html">
+  <link rel="import" href="../theme/material/vaadin-checkbox.html">
+  <link rel="import" href="../theme/material/vaadin-checkbox-group.html">
+</head>
+
+<body>
+<test-fixture id="default">
+  <template>
+    <vaadin-checkbox-group>
+      <vaadin-checkbox value="1">Checkbox <b>1</b></vaadin-checkbox>
+      <vaadin-checkbox value="2">Checkbox <b>2</b></vaadin-checkbox>
+      <vaadin-checkbox value="3">Checkbox <b>3</b></vaadin-checkbox>
+    </vaadin-checkbox-group>
+  </template>
+</test-fixture>
+
+<script>
+  describe('vaadin-checkbox-group material version', () => {
+
+    let vaadinCheckboxGroup;
+
+    beforeEach(() => {
+      vaadinCheckboxGroup = fixture('default');
+      vaadinCheckboxGroup._observer.flush();
+    });
+
+    it('should apply theme variant vertical after setting theme="vertical"', () => {
+      vaadinCheckboxGroup.setAttribute('theme', 'vertical');
+      const vaadinCheckboxList = vaadinCheckboxGroup.querySelectorAll('vaadin-checkbox');
+      vaadinCheckboxList.forEach(cb => {
+        cb.style.width = '160px';
+      });
+      const widthCheckboxGroup = vaadinCheckboxGroup.getClientRects()[0].width;
+      expect(widthCheckboxGroup).to.equal(160);
+    });
+  });
+</script>
+</body>
