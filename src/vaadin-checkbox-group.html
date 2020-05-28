@@ -399,7 +399,7 @@ This program is available under Apache License Version 2.0, available at https:/
           // Only has slotted helper if not a text node
           // Text nodes are added by the helperText prop and not the helper slot
           // The filter is added due to shady DOM triggering this slotchange event on helperText prop change
-          this._hasSlottedHelper = slottedNodes.filter(node => node.nodeType !== 3).length;
+          this._hasSlottedHelper = slottedNodes.filter(node => node.nodeType !== 3).length > 0;
 
           this._setOrToggleAttribute('has-helper', this._hasSlottedHelper ? 'slotted' : this.helperText === 0 || !!this.helperText);
         }

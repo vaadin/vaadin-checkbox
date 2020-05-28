@@ -357,7 +357,7 @@
         expect(vaadinCheckboxGroup.hasAttribute('has-helper')).to.be.true;
       });
 
-      it('text-field with slotted helper updates has-helper attribute', function() {
+      it('field with slotted helper updates has-helper attribute', function() {
         const checkboxGroupWithSlottedHelper = fixture('default-with-slotted-helper');
         checkboxGroupWithSlottedHelper._observer.flush();
         expect(checkboxGroupWithSlottedHelper.hasAttribute('has-helper')).to.be.true;
