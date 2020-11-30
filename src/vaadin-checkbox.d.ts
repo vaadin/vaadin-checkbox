@@ -1,5 +1,3 @@
-import {PolymerElement} from '@polymer/polymer/polymer-element.js';
-
 import {GestureEventListeners} from '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
 
 import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
@@ -7,8 +5,6 @@ import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin
 import {ControlStateMixin} from '@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js';
 
 import {ElementMixin} from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js';
-
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 
 /**
  * `<vaadin-checkbox>` is a Web Component for customized checkboxes.
@@ -47,7 +43,7 @@ declare class CheckboxElement extends
   ControlStateMixin(
   ThemableMixin(
   GestureEventListeners(
-  PolymerElement)))) {
+  HTMLElement)))) {
   readonly focusElement: HTMLInputElement;
 
   /**
@@ -70,7 +66,7 @@ declare class CheckboxElement extends
    * The value given to the data submitted with the checkbox's name to the server when the control is inside a form.
    */
   value: string|null|undefined;
-  ready(): void;
+
   _toggleChecked(): void;
 }
 

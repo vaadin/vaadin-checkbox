@@ -1,14 +1,8 @@
-import {PolymerElement} from '@polymer/polymer/polymer-element.js';
-
-import {FlattenedNodesObserver} from '@polymer/polymer/lib/utils/flattened-nodes-observer.js';
-
 import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 
 import {DirMixin} from '@vaadin/vaadin-element-mixin/vaadin-dir-mixin.js';
 
 import {CheckboxElement} from './vaadin-checkbox.js';
-
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 
 /**
  * `<vaadin-checkbox-group>` is a Polymer element for grouping vaadin-checkboxes.
@@ -49,7 +43,7 @@ import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 declare class CheckboxGroupElement extends
   ThemableMixin(
   DirMixin(
-  PolymerElement)) {
+  HTMLElement)) {
 
   /**
    * The current disabled state of the checkbox group. True if group and all internal checkboxes are disabled.
@@ -90,7 +84,6 @@ declare class CheckboxGroupElement extends
    * This property is set to true when the control value is invalid.
    */
   invalid: boolean;
-  ready(): void;
 
   /**
    * Returns true if `value` is valid.
