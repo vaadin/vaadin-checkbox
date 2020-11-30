@@ -1,6 +1,7 @@
-<link rel="import" href="../../../vaadin-material-styles/color.html">
+import '@vaadin/vaadin-material-styles/color.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 
-<dom-module id="material-checkbox" theme-for="vaadin-checkbox">
+const $_documentContainer = html`<dom-module id="material-checkbox" theme-for="vaadin-checkbox">
   <template>
     <style>
       :host {
@@ -45,7 +46,7 @@
       /* Used for the ripple */
       [part="checkbox"]::before {
         /* Needed to align the checkbox nicely on the baseline */
-        content: "\2003";
+        content: "\\2003";
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -143,4 +144,6 @@
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);

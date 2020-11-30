@@ -1,7 +1,8 @@
-<link rel="import" href="../../../vaadin-lumo-styles/color.html">
-<link rel="import" href="../../../vaadin-lumo-styles/style.html">
+import '@vaadin/vaadin-lumo-styles/color.js';
+import '@vaadin/vaadin-lumo-styles/style.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 
-<dom-module id="lumo-checkbox" theme-for="vaadin-checkbox">
+const $_documentContainer = html`<dom-module id="lumo-checkbox" theme-for="vaadin-checkbox">
   <template>
     <style include="lumo-checkbox-style lumo-checkbox-effects">
       /* IE11 only */
@@ -11,10 +12,7 @@
       }
     </style>
   </template>
-</dom-module>
-
-
-<dom-module id="lumo-checkbox-style">
+</dom-module><dom-module id="lumo-checkbox-style">
   <template>
     <style>
       :host {
@@ -50,7 +48,7 @@
 
       /* Needed to align the checkbox nicely on the baseline */
       [part="checkbox"]::before {
-        content: "\2003";
+        content: "\\2003";
       }
 
       /* Checkmark */
@@ -127,9 +125,7 @@
       }
     </style>
   </template>
-</dom-module>
-
-<dom-module id="lumo-checkbox-effects">
+</dom-module><dom-module id="lumo-checkbox-effects">
   <template>
     <style>
       /* Transition the checkmark if activated with the mouse (disabled for grid select-all this way) */
@@ -181,4 +177,6 @@
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);

@@ -3,8 +3,8 @@
 <head lang="en">
   <meta charset="UTF-8">
 
-  <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../../iron-test-helpers/mock-interactions.js"></script>
+  <script src="../../../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script src="../../../../@polymer/iron-test-helpers/mock-interactions.js" type="module"></script>
   <script>
     const theme = window.location.search.replace(/.*theme=(\w+).*/, '$1') || 'lumo';
     document.write(`<link rel="import" href="../../theme/${theme}/vaadin-checkbox.html">`);
