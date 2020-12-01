@@ -57,9 +57,6 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
       <style>
         :host {
           display: inline-flex;
-
-          /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
-          max-width: 100%;
         }
 
         :host::before {
@@ -75,9 +72,6 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
         .vaadin-group-field-container {
           display: flex;
           flex-direction: column;
-
-          /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
-          width: 100%;
         }
 
         [part='label']:empty {
