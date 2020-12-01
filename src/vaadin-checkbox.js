@@ -48,61 +48,64 @@ import { html } from '@polymer/polymer/lib/utils/html-tag.js';
  * @mixes ThemableMixin
  * @mixes GestureEventListeners
  */
-class CheckboxElement extends
-  ElementMixin(
-    ControlStateMixin(
-      ThemableMixin(
-        GestureEventListeners(PolymerElement)))) {
+class CheckboxElement extends ElementMixin(ControlStateMixin(ThemableMixin(GestureEventListeners(PolymerElement)))) {
   static get template() {
     return html`
-    <style>
-      :host {
-        display: inline-block;
-      }
+      <style>
+        :host {
+          display: inline-block;
+        }
 
-      :host([hidden]) {
-        display: none !important;
-      }
+        :host([hidden]) {
+          display: none !important;
+        }
 
-      label {
-        display: inline-flex;
-        align-items: baseline;
-        outline: none;
-      }
+        label {
+          display: inline-flex;
+          align-items: baseline;
+          outline: none;
+        }
 
-      [part="checkbox"] {
-        position: relative;
-        display: inline-block;
-        flex: none;
-      }
+        [part='checkbox'] {
+          position: relative;
+          display: inline-block;
+          flex: none;
+        }
 
-      input[type="checkbox"] {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        cursor: inherit;
-        margin: 0;
-      }
+        input[type='checkbox'] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: inherit;
+          margin: 0;
+        }
 
-      :host([disabled]) {
-        -webkit-tap-highlight-color: transparent;
-      }
-    </style>
+        :host([disabled]) {
+          -webkit-tap-highlight-color: transparent;
+        }
+      </style>
 
-    <label>
-      <span part="checkbox">
-        <input type="checkbox" checked="{{checked::change}}" disabled\$="[[disabled]]" indeterminate="{{indeterminate::change}}" role="presentation" tabindex="-1">
-      </span>
+      <label>
+        <span part="checkbox">
+          <input
+            type="checkbox"
+            checked="{{checked::change}}"
+            disabled$="[[disabled]]"
+            indeterminate="{{indeterminate::change}}"
+            role="presentation"
+            tabindex="-1"
+          />
+        </span>
 
-      <span part="label">
-        <slot></slot>
-      </span>
-    </label>
-`;
+        <span part="label">
+          <slot></slot>
+        </span>
+      </label>
+    `;
   }
 
   static get is() {
@@ -188,7 +191,9 @@ class CheckboxElement extends
       this.name = attrName;
     }
 
-    this.shadowRoot.querySelector('[part~="label"]').querySelector('slot')
+    this.shadowRoot
+      .querySelector('[part~="label"]')
+      .querySelector('slot')
       .addEventListener('slotchange', this._updateLabelAttribute.bind(this));
 
     this._updateLabelAttribute();
@@ -208,10 +213,10 @@ class CheckboxElement extends
   /** @private */
   _isAssignedNodesEmpty(nodes) {
     // The assigned nodes considered to be empty if there is no slotted content or only one empty text node
-    return nodes.length === 0 ||
-          (nodes.length == 1
-          && nodes[0].nodeType == Node.TEXT_NODE
-          && nodes[0].textContent.trim() === '');
+    return (
+      nodes.length === 0 ||
+      (nodes.length == 1 && nodes[0].nodeType == Node.TEXT_NODE && nodes[0].textContent.trim() === '')
+    );
   }
 
   /** @private */
@@ -245,7 +250,7 @@ class CheckboxElement extends
     this._addEventListenerToNode(this, 'up', () => this.removeAttribute('active'));
 
     // KEYDOWN
-    this.addEventListener('keydown', e => {
+    this.addEventListener('keydown', (e) => {
       if (this.__interactionsAllowed(e) && e.keyCode === 32) {
         e.preventDefault();
         this.setAttribute('active', '');
@@ -253,7 +258,7 @@ class CheckboxElement extends
     });
 
     // KEYUP
-    this.addEventListener('keyup', e => {
+    this.addEventListener('keyup', (e) => {
       if (this.__interactionsAllowed(e) && e.keyCode === 32) {
         e.preventDefault();
         this._toggleChecked();
@@ -314,7 +319,7 @@ class CheckboxElement extends
   /** @protected */
   _toggleChecked() {
     this.checked = !this.checked;
-    this.dispatchEvent(new CustomEvent('change', {composed: false, bubbles: true}));
+    this.dispatchEvent(new CustomEvent('change', { composed: false, bubbles: true }));
   }
 
   /**

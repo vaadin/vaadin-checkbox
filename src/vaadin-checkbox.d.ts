@@ -1,10 +1,10 @@
-import {GestureEventListeners} from '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
+import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
 
-import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
+import { ThemableMixin } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 
-import {ControlStateMixin} from '@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js';
+import { ControlStateMixin } from '@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js';
 
-import {ElementMixin} from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js';
+import { ElementMixin } from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js';
 
 /**
  * `<vaadin-checkbox>` is a Web Component for customized checkboxes.
@@ -38,12 +38,9 @@ import {ElementMixin} from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js
  *
  * See [ThemableMixin – how to apply styles for shadow parts](https://github.com/vaadin/vaadin-themable-mixin/wiki)
  */
-declare class CheckboxElement extends
-  ElementMixin(
-  ControlStateMixin(
-  ThemableMixin(
-  GestureEventListeners(
-  HTMLElement)))) {
+declare class CheckboxElement extends ElementMixin(
+  ControlStateMixin(ThemableMixin(GestureEventListeners(HTMLElement)))
+) {
   readonly focusElement: HTMLInputElement;
 
   /**
@@ -65,16 +62,15 @@ declare class CheckboxElement extends
   /**
    * The value given to the data submitted with the checkbox's name to the server when the control is inside a form.
    */
-  value: string|null|undefined;
+  value: string | null | undefined;
 
   _toggleChecked(): void;
 }
 
 declare global {
-
   interface HTMLElementTagNameMap {
-    "vaadin-checkbox": CheckboxElement;
+    'vaadin-checkbox': CheckboxElement;
   }
 }
 
-export {CheckboxElement};
+export { CheckboxElement };

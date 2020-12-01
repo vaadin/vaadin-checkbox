@@ -54,52 +54,61 @@ import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
   static get template() {
     return html`
-    <style>
-      :host {
-        display: inline-flex;
+      <style>
+        :host {
+          display: inline-flex;
 
-        /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
-        max-width: 100%;
-      }
+          /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
+          max-width: 100%;
+        }
 
-      :host::before {
-        content: "\\2003";
-        width: 0;
-        display: inline-block;
-      }
+        :host::before {
+          content: '\\2003';
+          width: 0;
+          display: inline-block;
+        }
 
-      :host([hidden]) {
-        display: none !important;
-      }
+        :host([hidden]) {
+          display: none !important;
+        }
 
-      .vaadin-group-field-container {
-        display: flex;
-        flex-direction: column;
+        .vaadin-group-field-container {
+          display: flex;
+          flex-direction: column;
 
-        /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
-        width: 100%;
-      }
+          /* Prevent horizontal overflow in IE 11 instead of wrapping checkboxes */
+          width: 100%;
+        }
 
-      [part="label"]:empty {
-        display: none;
-      }
-    </style>
+        [part='label']:empty {
+          display: none;
+        }
+      </style>
 
-    <div class="vaadin-group-field-container">
-      <label part="label">[[label]]</label>
+      <div class="vaadin-group-field-container">
+        <label part="label">[[label]]</label>
 
-      <div part="group-field">
-        <slot id="slot"></slot>
+        <div part="group-field">
+          <slot id="slot"></slot>
+        </div>
+
+        <div
+          part="helper-text"
+          on-click="focus"
+          aria-live="assertive"
+          aria-hidden$="[[_getHelperTextAriaHidden(helperText, _hasSlottedHelper)]]"
+        >
+          <slot name="helper">[[helperText]]</slot>
+        </div>
+
+        <div
+          part="error-message"
+          aria-live="assertive"
+          aria-hidden$="[[_getErrorMessageAriaHidden(invalid, errorMessage)]]"
+          >[[errorMessage]]</div
+        >
       </div>
-
-      <div part="helper-text" on-click="focus" aria-live="assertive" aria-hidden\$="[[_getHelperTextAriaHidden(helperText, _hasSlottedHelper)]]">
-        <slot name="helper">[[helperText]]</slot>
-      </div>
-
-      <div part="error-message" aria-live="assertive" aria-hidden\$="[[_getErrorMessageAriaHidden(invalid, errorMessage)]]">[[errorMessage]]</div>
-
-    </div>
-`;
+    `;
   }
 
   static get is() {
@@ -180,15 +189,12 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
       },
 
       /** @private */
-      _hasSlottedHelper: Boolean,
-
+      _hasSlottedHelper: Boolean
     };
   }
 
   static get observers() {
-    return [
-      '_updateValue(value, value.splices)'
-    ];
+    return ['_updateValue(value, value.splices)'];
   }
 
   ready() {
@@ -196,9 +202,13 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
 
     this.addEventListener('focusin', () => this._setFocused(this._containsFocus()));
 
-    this.addEventListener('focusout', e => {
+    this.addEventListener('focusout', (e) => {
       // validate when stepping out of the checkbox group
-      if (!this._checkboxes.some(checkbox => e.relatedTarget === checkbox || checkbox.shadowRoot.contains(e.relatedTarget))) {
+      if (
+        !this._checkboxes.some(
+          (checkbox) => e.relatedTarget === checkbox || checkbox.shadowRoot.contains(e.relatedTarget)
+        )
+      ) {
         this.validate();
         this._setFocused(false);
       }
@@ -208,10 +218,10 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
       this._changeSelectedCheckbox(e.target);
     };
 
-    this._observer = new FlattenedNodesObserver(this, info => {
+    this._observer = new FlattenedNodesObserver(this, (info) => {
       const addedCheckboxes = this._filterCheckboxes(info.addedNodes);
 
-      addedCheckboxes.forEach(checkbox => {
+      addedCheckboxes.forEach((checkbox) => {
         checkbox.addEventListener('checked-changed', checkedChangedListener);
         if (this.disabled) {
           checkbox.disabled = true;
@@ -223,7 +233,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
         }
       });
 
-      this._filterCheckboxes(info.removedNodes).forEach(checkbox => {
+      this._filterCheckboxes(info.removedNodes).forEach((checkbox) => {
         checkbox.removeEventListener('checked-changed', checkedChangedListener);
         if (checkbox.checked) {
           this._removeCheckboxFromValue(checkbox.value);
@@ -232,9 +242,9 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
 
       this._setOrToggleHasHelperAttribute();
 
-      const hasValue = checkbox => {
-        const {value} = checkbox;
-        return checkbox.hasAttribute('value') || value && value !== 'on';
+      const hasValue = (checkbox) => {
+        const { value } = checkbox;
+        return checkbox.hasAttribute('value') || (value && value !== 'on');
       };
       if (!addedCheckboxes.every(hasValue)) {
         console.warn('Please add value attribute to all checkboxes in checkbox group');
@@ -260,15 +270,14 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
 
   /** @private */
   _filterCheckboxes(nodes) {
-    return Array.from(nodes)
-      .filter(child => child instanceof CheckboxElement);
+    return Array.from(nodes).filter((child) => child instanceof CheckboxElement);
   }
 
   /** @private */
   _disabledChanged(disabled) {
     this.setAttribute('aria-disabled', disabled);
 
-    this._checkboxes.forEach(checkbox => checkbox.disabled = disabled);
+    this._checkboxes.forEach((checkbox) => (checkbox.disabled = disabled));
   }
 
   /**
@@ -286,7 +295,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
    * @protected
    */
   _removeCheckboxFromValue(value) {
-    this.value = this.value.filter(v => v !== value);
+    this.value = this.value.filter((v) => v !== value);
   }
 
   /**
@@ -306,7 +315,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
   }
 
   /** @private */
-  _updateValue(value, splices) {
+  _updateValue(value) {
     // setting initial value to empty array, skip validation
     if (value.length === 0 && this._oldValue === undefined) {
       return;
@@ -322,7 +331,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
     // set a flag to avoid updating loop
     this._updatingValue = true;
     // reflect the value array to checkboxes
-    this._checkboxes.forEach(checkbox => {
+    this._checkboxes.forEach((checkbox) => {
       checkbox.checked = value.indexOf(checkbox.value) > -1;
     });
     this._updatingValue = false;
@@ -352,7 +361,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
     }
 
     if (value) {
-      this.setAttribute(name, (typeof value === 'boolean') ? '' : value);
+      this.setAttribute(name, typeof value === 'boolean' ? '' : value);
     } else {
       this.removeAttribute(name);
     }
@@ -392,7 +401,7 @@ class CheckboxGroupElement extends ThemableMixin(DirMixin(PolymerElement)) {
     // Only has slotted helper if not a text node
     // Text nodes are added by the helperText prop and not the helper slot
     // The filter is added due to shady DOM triggering this slotchange event on helperText prop change
-    this._hasSlottedHelper = slottedNodes.filter(node => node.nodeType !== 3).length > 0;
+    this._hasSlottedHelper = slottedNodes.filter((node) => node.nodeType !== 3).length > 0;
 
     this._setOrToggleAttribute('has-helper', this._hasSlottedHelper ? 'slotted' : !!this.helperText);
   }

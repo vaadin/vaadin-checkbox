@@ -1,8 +1,8 @@
-import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
+import { ThemableMixin } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 
-import {DirMixin} from '@vaadin/vaadin-element-mixin/vaadin-dir-mixin.js';
+import { DirMixin } from '@vaadin/vaadin-element-mixin/vaadin-dir-mixin.js';
 
-import {CheckboxElement} from './vaadin-checkbox.js';
+import { CheckboxElement } from './vaadin-checkbox.js';
 
 /**
  * `<vaadin-checkbox-group>` is a Polymer element for grouping vaadin-checkboxes.
@@ -40,20 +40,16 @@ import {CheckboxElement} from './vaadin-checkbox.js';
  *
  * See [ThemableMixin – how to apply styles for shadow parts](https://github.com/vaadin/vaadin-themable-mixin/wiki)
  */
-declare class CheckboxGroupElement extends
-  ThemableMixin(
-  DirMixin(
-  HTMLElement)) {
-
+declare class CheckboxGroupElement extends ThemableMixin(DirMixin(HTMLElement)) {
   /**
    * The current disabled state of the checkbox group. True if group and all internal checkboxes are disabled.
    */
-  disabled: boolean|null|undefined;
+  disabled: boolean | null | undefined;
 
   /**
    * String used for the label element.
    */
-  label: string|null|undefined;
+  label: string | null | undefined;
 
   /**
    * Value of the checkbox group.
@@ -67,18 +63,18 @@ declare class CheckboxGroupElement extends
    * Error to show when the input value is invalid.
    * @attr {string} error-message
    */
-  errorMessage: string|null|undefined;
+  errorMessage: string | null | undefined;
 
   /**
    * String used for the helper text.
    * @attr {string} helper-text
    */
-  helperText: string|null;
+  helperText: string | null;
 
   /**
    * Specifies that the user must fill in a value.
    */
-  required: boolean|null|undefined;
+  required: boolean | null | undefined;
 
   /**
    * This property is set to true when the control value is invalid.
@@ -92,18 +88,21 @@ declare class CheckboxGroupElement extends
    * @returns True if the value is valid.
    */
   validate(): boolean;
+
   _addCheckboxToValue(value: string): void;
+
   _removeCheckboxFromValue(value: string): void;
-  _changeSelectedCheckbox(checkbox: CheckboxElement|null): void;
+
+  _changeSelectedCheckbox(checkbox: CheckboxElement | null): void;
+
   _containsFocus(): boolean;
   _setFocused(focused: boolean): void;
 }
 
 declare global {
-
   interface HTMLElementTagNameMap {
-    "vaadin-checkbox-group": CheckboxGroupElement;
+    'vaadin-checkbox-group': CheckboxGroupElement;
   }
 }
 
-export {CheckboxGroupElement};
+export { CheckboxGroupElement };
