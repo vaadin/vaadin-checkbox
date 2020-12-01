@@ -26,6 +26,7 @@
   ],
   "scripts": {
     "debug": "web-test-runner test/*.test.js --watch",
+    "prestart": "polymer analyze vaadin-* > analysis.json",
     "start": "web-dev-server --node-resolve --open",
     "test": "web-test-runner test/*.test.js --coverage",
     "test:sauce": "TEST_ENV=sauce npm test"
