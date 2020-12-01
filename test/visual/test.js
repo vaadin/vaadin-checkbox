@@ -19,7 +19,7 @@ describe('vaadin-checkbox', () => {
     });
 
     it(`checkbox-group-${theme}`, function () {
-      const test = this.browser
+      return this.browser
         .url(`group.html?theme=${theme}`)
         .waitForVisible(locator, 10000)
         .assertView(`${theme}-checkbox-group-default`, locator)
@@ -66,17 +66,20 @@ describe('vaadin-checkbox', () => {
           group.helperText = 'Helper text';
         })
         .assertView(`${theme}-checkbox-group-invalid-helper`, locator);
-
-      return theme === 'material'
-        ? test
-        : test
-            .execute(() => {
-              const group = window.document.querySelector('vaadin-checkbox-group');
-              group.required = false;
-              group.validate();
-              group.setAttribute('theme', 'helper-above-field');
-            })
-            .assertView(`${theme}-checkbox-group-helper-above`, locator);
     });
+
+    if (theme === 'lumo') {
+      it(`checkbox-group-theme-${theme}`, function () {
+        return this.browser
+          .url(`group.html?theme=${theme}`)
+          .waitForVisible(locator, 10000)
+          .execute(() => {
+            const group = window.document.querySelector('vaadin-checkbox-group');
+            group.helperText = 'Helper text';
+            group.setAttribute('theme', 'helper-above-field');
+          })
+          .assertView(`${theme}-checkbox-group-helper-above`, locator);
+      });
+    }
   });
 });
