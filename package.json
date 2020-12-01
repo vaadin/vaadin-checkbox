@@ -26,6 +26,7 @@
   ],
   "scripts": {
     "debug": "web-test-runner test/*.test.js --watch",
+    "start": "web-dev-server --node-resolve --open",
     "test": "web-test-runner test/*.test.js --coverage",
     "test:sauce": "TEST_ENV=sauce npm test"
   },
@@ -42,6 +43,7 @@
     "@open-wc/testing-helpers": "^1.8.0",
     "@polymer/iron-component-page": "^4.0.0",
     "@polymer/iron-test-helpers": "^3.0.0",
+    "@web/dev-server": "~0.0.25",
     "@web/test-runner": "~0.10.0",
     "@web/test-runner-saucelabs": "~0.1.3",
     "sinon": "^9.2.0"
