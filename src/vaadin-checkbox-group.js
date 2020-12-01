@@ -45,6 +45,9 @@ import { CheckboxElement } from './vaadin-checkbox.js';
  *
  * See [ThemableMixin – how to apply styles for shadow parts](https://github.com/vaadin/vaadin-themable-mixin/wiki)
  *
+ * @fires {CustomEvent<boolean>} invalid-changed
+ * @fires {CustomEvent<Array<string>>} value-changed
+ *
  * @extends HTMLElement
  * @mixes ThemableMixin
  * @mixes DirMixin

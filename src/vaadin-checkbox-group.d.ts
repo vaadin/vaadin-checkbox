@@ -5,6 +5,24 @@ import { DirMixin } from '@vaadin/vaadin-element-mixin/vaadin-dir-mixin.js';
 import { CheckboxElement } from './vaadin-checkbox.js';
 
 /**
+ * Fired when the `invalid` property changes.
+ */
+export type CheckboxGroupInvalidChanged = CustomEvent<{ value: boolean }>;
+
+/**
+ * Fired when the `value` property changes.
+ */
+export type CheckboxGroupValueChanged = CustomEvent<{ value: Array<string> }>;
+
+export interface CheckboxGroupElementEventMap {
+  'invalid-changed': CheckboxGroupInvalidChanged;
+
+  'value-changed': CheckboxGroupValueChanged;
+}
+
+export interface CheckboxGroupEventMap extends HTMLElementEventMap, CheckboxGroupElementEventMap {}
+
+/**
  * `<vaadin-checkbox-group>` is a Polymer element for grouping vaadin-checkboxes.
  *
  * ```html
@@ -39,6 +57,9 @@ import { CheckboxElement } from './vaadin-checkbox.js';
  * `invalid` | Set when the element is invalid | :host
  *
  * See [ThemableMixin – how to apply styles for shadow parts](https://github.com/vaadin/vaadin-themable-mixin/wiki)
+ *
+ * @fires {CustomEvent<boolean>} invalid-changed
+ * @fires {CustomEvent<Array<string>>} value-changed
  */
 declare class CheckboxGroupElement extends ThemableMixin(DirMixin(HTMLElement)) {
   /**
@@ -96,7 +117,20 @@ declare class CheckboxGroupElement extends ThemableMixin(DirMixin(HTMLElement)) 
   _changeSelectedCheckbox(checkbox: CheckboxElement | null): void;
 
   _containsFocus(): boolean;
+
   _setFocused(focused: boolean): void;
+
+  addEventListener<K extends keyof CheckboxGroupEventMap>(
+    type: K,
+    listener: (this: CheckboxGroupElement, ev: CheckboxGroupEventMap[K]) => void,
+    options?: boolean | AddEventListenerOptions
+  ): void;
+
+  removeEventListener<K extends keyof CheckboxGroupEventMap>(
+    type: K,
+    listener: (this: CheckboxGroupElement, ev: CheckboxGroupEventMap[K]) => void,
+    options?: boolean | EventListenerOptions
+  ): void;
 }
 
 declare global {

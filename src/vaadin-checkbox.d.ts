@@ -7,6 +7,24 @@ import { ControlStateMixin } from '@vaadin/vaadin-control-state-mixin/vaadin-con
 import { ElementMixin } from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js';
 
 /**
+ * Fired when the `checked` property changes.
+ */
+export type CheckboxCheckedChanged = CustomEvent<{ value: boolean }>;
+
+/**
+ * Fired when the `indeterminate` property changes.
+ */
+export type CheckboxIndeterminateChanged = CustomEvent<{ value: boolean }>;
+
+export interface CheckboxElementEventMap {
+  'checked-changed': CheckboxCheckedChanged;
+
+  'indeterminate-changed': CheckboxIndeterminateChanged;
+}
+
+export interface CheckboxEventMap extends HTMLElementEventMap, CheckboxElementEventMap {}
+
+/**
  * `<vaadin-checkbox>` is a Web Component for customized checkboxes.
  *
  * ```html
@@ -37,6 +55,9 @@ import { ElementMixin } from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.
  * `empty` | Set when there is no label provided. | `label`
  *
  * See [ThemableMixin – how to apply styles for shadow parts](https://github.com/vaadin/vaadin-themable-mixin/wiki)
+ *
+ * @fires {CustomEvent<boolean>} checked-changed
+ * @fires {CustomEvent<boolean>} indeterminate-changed
  */
 declare class CheckboxElement extends ElementMixin(
   ControlStateMixin(ThemableMixin(GestureEventListeners(HTMLElement)))
@@ -65,6 +86,18 @@ declare class CheckboxElement extends ElementMixin(
   value: string | null | undefined;
 
   _toggleChecked(): void;
+
+  addEventListener<K extends keyof CheckboxEventMap>(
+    type: K,
+    listener: (this: CheckboxElement, ev: CheckboxEventMap[K]) => void,
+    options?: boolean | AddEventListenerOptions
+  ): void;
+
+  removeEventListener<K extends keyof CheckboxEventMap>(
+    type: K,
+    listener: (this: CheckboxElement, ev: CheckboxEventMap[K]) => void,
+    options?: boolean | EventListenerOptions
+  ): void;
 }
 
 declare global {
