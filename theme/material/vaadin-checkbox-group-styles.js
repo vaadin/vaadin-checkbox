@@ -32,7 +32,7 @@ registerStyles(
     }
 
     [part='label']:empty::before {
-      content: ' ';
+      content: '\\00a0';
       position: absolute;
     }
 
