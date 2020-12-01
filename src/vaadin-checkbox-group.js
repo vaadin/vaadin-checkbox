@@ -3,13 +3,12 @@
 Copyright (c) 2017 Vaadin Ltd.
 This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
 */
-import { PolymerElement } from '@polymer/polymer/polymer-element.js';
-
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import { FlattenedNodesObserver } from '@polymer/polymer/lib/utils/flattened-nodes-observer.js';
 import { ThemableMixin } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 import { DirMixin } from '@vaadin/vaadin-element-mixin/vaadin-dir-mixin.js';
 import { CheckboxElement } from './vaadin-checkbox.js';
-import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+
 /**
  * `<vaadin-checkbox-group>` is a Polymer element for grouping vaadin-checkboxes.
  *
