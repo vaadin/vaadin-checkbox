@@ -5,3 +5,4 @@ yarn.lock
 coverage
 dist
 analysis.json
+appium.log
