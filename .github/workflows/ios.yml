@@ -47,7 +47,7 @@ jobs:
       run: npm install -g appium@beta --chromedriver-skip-install
 
     - name: Start Appium server
-      run: appium > appium.log &
+      run: appium --log-timestamp --log-no-colors > appium.log &
 
     - name: Poll for Appium Server
       run: |
