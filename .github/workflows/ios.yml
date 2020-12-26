@@ -9,10 +9,6 @@ on:
 
 jobs:
   unit-tests:
-    strategy:
-      matrix:
-        device:
-          - "iPhone 12 (14.3)"
     runs-on: macos-10.15
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
@@ -21,17 +17,15 @@ jobs:
       with:
         xcode-version: '12.3'
 
-    - name: List all simulators
-      run: xcrun instruments -s
-
     - name: Start Simulator
       run: |
         UDID=$(
-          xcrun instruments -s |
+          xcrun xctrace list devices 2>&1 >/dev/null |
+          grep "iPhone 12 (14.3)" |
+          grep -v Watch |
           awk \
-            -F ' *[][]' \
-            -v 'device=${{ matrix.device }}' \
-            '$1 == device { print $2 }'
+            -F"[()]" \
+            '{print $(NF -1)}'
         )
         xcrun simctl boot "${UDID:?No Simulator with this name found}"
 
