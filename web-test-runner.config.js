@@ -62,7 +62,7 @@ if (process.env.TEST_ENV === 'ios') {
         // This is `appium:` for all Appium Capabilities which can be found here
         // http://appium.io/docs/en/writing-running-appium/caps/
         'appium:deviceName': 'iPhone 12',
-        'appium:platformVersion': '14.3',
+        'appium:platformVersion': '14.4',
         'appium:orientation': 'PORTRAIT',
         'appium:automationName': 'XCUITest',
         'appium:newCommandTimeout': 240
