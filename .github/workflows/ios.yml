@@ -9,20 +9,7 @@ on:
 
 jobs:
   unit-tests:
-    runs-on: macos-10.15
-    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
-
-    - name: Start Simulator
-      run: |
-        UDID=$(
-          xcrun xctrace list devices 2>&1 >/dev/null |
-          grep "iPhone 12 (14.3)" |
-          grep -v Watch |
-          awk \
-            -F"[()]" \
-            '{print $(NF -1)}'
-        )
-        xcrun simctl boot "${UDID:?No Simulator with this name found}"
+    runs-on: macos-latest
 
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
