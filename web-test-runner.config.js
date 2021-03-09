@@ -58,7 +58,6 @@ if (process.env.TEST_ENV === 'ios') {
         // The defaults you need to have in your config
         browserName: 'safari',
         platformName: 'iOS',
-        maxInstances: 1,
         // For W3C the appium capabilities need to have an extension prefix
         // This is `appium:` for all Appium Capabilities which can be found here
         // http://appium.io/docs/en/writing-running-appium/caps/
