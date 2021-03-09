@@ -11,6 +11,19 @@ jobs:
   unit-tests:
     runs-on: macos-latest
 
+    steps:
+    - name: Start Simulator
+      run: |
+        UDID=$(
+          xcrun xctrace list devices 2>&1 >/dev/null |
+          grep "iPhone 12 (14.3)" |
+          grep -v Watch |
+          awk \
+            -F"[()]" \
+            '{print $(NF -1)}'
+        )
+        xcrun simctl boot "${UDID:?No Simulator with this name found}"
+
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
