@@ -1,10 +1,13 @@
 # &lt;vaadin-checkbox&gt;
 
+> ⚠️ Starting from Vaadin 20, the source code and issues for this component are migrated to the [`vaadin/web-components`](https://github.com/vaadin/web-components/tree/master/packages/vaadin-checkbox) monorepository.
+> This repository contains the source code and releases of `<vaadin-checkbox>` for the Vaadin versions 10 to 19.
+
+[&lt;vaadin-checkbox&gt;](https://vaadin.com/components/vaadin-checkbox) is a Web Component providing an accessible and customizable checkbox, part of the [Vaadin components](https://vaadin.com/components).
+
 [Live Demo ↗](https://vaadin.com/components/vaadin-checkbox/html-examples)
 |
 [API documentation ↗](https://vaadin.com/components/vaadin-checkbox/html-api)
-
-[&lt;vaadin-checkbox&gt;](https://vaadin.com/components/vaadin-checkbox) is a Web Component providing an accessible and customizable checkbox, part of the [Vaadin components](https://vaadin.com/components).
 
 [![npm version](https://badgen.net/npm/v/@vaadin/vaadin-checkbox)](https://www.npmjs.com/package/@vaadin/vaadin-checkbox)
 [![Build Status](https://travis-ci.org/vaadin/vaadin-checkbox.svg?branch=master)](https://travis-ci.org/vaadin/vaadin-checkbox)
