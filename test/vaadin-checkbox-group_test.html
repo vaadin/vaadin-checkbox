@@ -377,6 +377,16 @@
 
         expect(radioButtonGroupWithSlottedHelper.hasAttribute('has-helper')).to.be.false;
       });
+
+      it('should not get focus after helper click', () => {
+        const group = fixture('default-with-slotted-helper');
+        const spy = sinon.spy(group, 'focus');
+        const helper = group.querySelector('[slot="helper"]');
+
+        helper.click();
+
+        expect(spy.called).to.be.false;
+      });
     });
   });
 
