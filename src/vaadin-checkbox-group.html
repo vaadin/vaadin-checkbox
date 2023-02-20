@@ -258,6 +258,7 @@ This program is available under Apache License Version 2.0, available at https:/
          */
         validate() {
           this.invalid = this.required && this.value.length === 0;
+          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: !this.invalid}}));
           return !this.invalid;
         }
 

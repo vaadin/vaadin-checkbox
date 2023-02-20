@@ -492,6 +492,28 @@
       expect(vaadinCheckboxGroup.shadowRoot.querySelector('[part="error-message"]').getAttribute('aria-hidden')).to.be.equal('false');
     });
 
+    it('should fire a validated event on validation success', () => {
+      const validatedSpy = sinon.spy();
+      vaadinCheckboxGroup.addEventListener('validated', validatedSpy);
+      vaadinCheckboxGroup.validate();
+
+      expect(validatedSpy.calledOnce).to.be.true;
+      const event = validatedSpy.firstCall.args[0];
+      expect(event.detail.valid).to.be.true;
+    });
+
+    it('should fire a validated event on validation failure', () => {
+      const validatedSpy = sinon.spy();
+      vaadinCheckboxGroup.addEventListener('validated', validatedSpy);
+      vaadinCheckboxGroup.required = true;
+      vaadinCheckboxGroup.validate();
+
+      expect(validatedSpy.calledOnce).to.be.true;
+      const event = validatedSpy.firstCall.args[0];
+      expect(event.detail.valid).to.be.false;
+    });
+
+
   });
 
   describe('vaadin-checkbox-group value array mutation methods', () => {
