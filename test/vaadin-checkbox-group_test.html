@@ -10,6 +10,7 @@
   <link rel="import" href="../../test-fixture/test-fixture.html">
   <link rel="import" href="../vaadin-checkbox.html">
   <link rel="import" href="../vaadin-checkbox-group.html">
+  <script src="common.js"></script>
 </head>
 
 <body>
@@ -492,6 +493,41 @@
       expect(vaadinCheckboxGroup.shadowRoot.querySelector('[part="error-message"]').getAttribute('aria-hidden')).to.be.equal('false');
     });
 
+  });
+
+  describe('initial validation', () => {
+    let validateSpy;
+    let group;
+
+    beforeEach(() => {
+      group = document.createElement('vaadin-checkbox-group');
+      validateSpy = sinon.spy(group, 'validate');
+    });
+
+    afterEach(() => {
+      group.remove();
+    });
+
+    it('should not validate by default', async() => {
+      document.body.appendChild(group);
+      await nextRender();
+      expect(validateSpy.called).to.be.false;
+    });
+
+    it('should not validate when the field has an initial value', async() => {
+      group.value = ['en'];
+      document.body.appendChild(group);
+      await nextRender();
+      expect(validateSpy.called).to.be.false;
+    });
+
+    it('should not validate when the field has an initial value and invalid', async() => {
+      group.value = ['en'];
+      group.invalid = true;
+      document.body.appendChild(group);
+      await nextRender();
+      expect(validateSpy.called).to.be.false;
+    });
   });
 
   describe('vaadin-checkbox-group value array mutation methods', () => {
