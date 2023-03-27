@@ -1,4 +1,7 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
   "globals": {
     "WCT": false,
     "describe": false,
