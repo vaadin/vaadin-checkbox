@@ -628,7 +628,7 @@
       element.required = true;
       element.validate();
       expect(element.invalid).to.be.true;
-      element.value = 'value';
+      element.value = ['value'];
       element.validate();
       expect(element.invalid).to.be.true;
     });
