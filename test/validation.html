@@ -25,20 +25,20 @@
       group.remove();
     });
 
-    it('should not validate by default', async () => {
+    it('should not validate by default', async() => {
       document.body.appendChild(group);
       await nextRender();
       expect(validateSpy.called).to.be.false;
     });
 
-    it('should not validate when the field has an initial value', async () => {
+    it('should not validate when the field has an initial value', async() => {
       group.value = ['en'];
       document.body.appendChild(group);
       await nextRender();
       expect(validateSpy.called).to.be.false;
     });
 
-    it('should not validate when the field has an initial value and invalid', async () => {
+    it('should not validate when the field has an initial value and invalid', async() => {
       group.value = ['en'];
       group.invalid = true;
       document.body.appendChild(group);
