@@ -251,6 +251,27 @@ This program is available under Apache License Version 2.0, available at https:/
         }
 
         /**
+         * @param {boolean} invalid
+         * @protected
+         */
+        _setInvalid(invalid) {
+          if (this._shouldSetInvalid(invalid)) {
+            this.invalid = invalid;
+          }
+        }
+
+        /**
+         * Override this method to define whether the given `invalid` state should be set.
+         *
+         * @param {boolean} _invalid
+         * @return {boolean}
+         * @protected
+         */
+        _shouldSetInvalid(_invalid) {
+          return true;
+        }
+
+        /**
          * Validates the field and sets the `invalid` property based on the result.
          *
          * The method fires a `validated` event with the result of the validation.
@@ -258,9 +279,10 @@ This program is available under Apache License Version 2.0, available at https:/
          * @return {boolean} True if the value is valid.
          */
         validate() {
-          this.invalid = this.required && this.value.length === 0;
-          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: !this.invalid}}));
-          return !this.invalid;
+          const isValid = !(this.required && this.value.length === 0);
+          this._setInvalid(!isValid);
+          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: isValid}}));
+          return isValid;
         }
 
         /** @private */
