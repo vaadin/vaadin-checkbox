@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>vaadin-checkbox tests</title>
+  <title>vaadin-checkbox validation tests</title>
   <script src="../../web-component-tester/browser.js"></script>
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="../../test-fixture/test-fixture.html">
@@ -11,21 +11,21 @@
 </head>
 
 <body>
-  <test-fixture id="checkox-group">
-  <template>
-    <vaadin-checkbox-group>
-      <vaadin-checkbox value="1">Checkbox <b>1</b></vaadin-checkbox>
-      <vaadin-checkbox value="2">Checkbox <b>2</b></vaadin-checkbox>
-      <vaadin-checkbox value="3">Checkbox <b>3</b></vaadin-checkbox>
-    </vaadin-checkbox-group>
-  </template>
- </test-fixture>
+  <test-fixture id="checkbox-group">
+    <template>
+      <vaadin-checkbox-group>
+        <vaadin-checkbox value="1">Checkbox <b>1</b></vaadin-checkbox>
+        <vaadin-checkbox value="2">Checkbox <b>2</b></vaadin-checkbox>
+        <vaadin-checkbox value="3">Checkbox <b>3</b></vaadin-checkbox>
+      </vaadin-checkbox-group>
+    </template>
+  </test-fixture>
   <script>
   describe('basic', () => {
     let group;
 
     beforeEach(() => {
-      group = fixture('checkox-group');
+      group = fixture('checkbox-group');
     });
 
     it('should fire a validated event on validation success', () => {
