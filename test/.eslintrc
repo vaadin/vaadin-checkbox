@@ -1,4 +1,7 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
   "globals": {
     "WCT": false,
     "describe": false,
@@ -9,6 +12,7 @@
     "expect": false,
     "gemini": false,
     "MockInteractions": false,
-    "animationFrameFlush": false
+    "animationFrameFlush": false,
+    "nextRender": false
   }
 }
