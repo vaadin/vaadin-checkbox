@@ -279,9 +279,10 @@ This program is available under Apache License Version 2.0, available at https:/
          * @return {boolean} True if the value is valid.
          */
         validate() {
-          this._setInvalid(this.required && this.value.length === 0);
-          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: !this.invalid}}));
-          return !this.invalid;
+          const isValid = !(this.required && this.value.length === 0);
+          this._setInvalid(!isValid);
+          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: isValid}}));
+          return isValid;
         }
 
         /** @private */
