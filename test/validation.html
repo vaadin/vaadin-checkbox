@@ -1,0 +1,53 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>vaadin-checkbox validation tests</title>
+  <script src="../../web-component-tester/browser.js"></script>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../test-fixture/test-fixture.html">
+  <link rel="import" href="../vaadin-checkbox.html">
+  <link rel="import" href="../vaadin-checkbox-group.html">
+</head>
+
+<body>
+  <test-fixture id="checkbox-group">
+    <template>
+      <vaadin-checkbox-group>
+        <vaadin-checkbox value="1">Checkbox <b>1</b></vaadin-checkbox>
+        <vaadin-checkbox value="2">Checkbox <b>2</b></vaadin-checkbox>
+        <vaadin-checkbox value="3">Checkbox <b>3</b></vaadin-checkbox>
+      </vaadin-checkbox-group>
+    </template>
+  </test-fixture>
+  <script>
+  describe('basic', () => {
+    let group;
+
+    beforeEach(() => {
+      group = fixture('checkbox-group');
+    });
+
+    it('should fire a validated event on validation success', () => {
+      const validatedSpy = sinon.spy();
+      group.addEventListener('validated', validatedSpy);
+      group.validate();
+
+      expect(validatedSpy.calledOnce).to.be.true;
+      const event = validatedSpy.firstCall.args[0];
+      expect(event.detail.valid).to.be.true;
+    });
+
+    it('should fire a validated event on validation failure', () => {
+      const validatedSpy = sinon.spy();
+      group.addEventListener('validated', validatedSpy);
+      group.required = true;
+      group.validate();
+  
+      expect(validatedSpy.calledOnce).to.be.true;
+      const event = validatedSpy.firstCall.args[0];
+      expect(event.detail.valid).to.be.false;
+    });
+  });
+  </script>
+</body>

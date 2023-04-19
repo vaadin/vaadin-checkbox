@@ -251,13 +251,15 @@ This program is available under Apache License Version 2.0, available at https:/
         }
 
         /**
-         * Returns true if `value` is valid.
-         * `<iron-form>` uses this to check the validity or all its elements.
+         * Validates the field and sets the `invalid` property based on the result.
+         *
+         * The method fires a `validated` event with the result of the validation.
          *
          * @return {boolean} True if the value is valid.
          */
         validate() {
           this.invalid = this.required && this.value.length === 0;
+          this.dispatchEvent(new CustomEvent('validated', {detail: {valid: !this.invalid}}));
           return !this.invalid;
         }
 
@@ -409,6 +411,14 @@ This program is available under Apache License Version 2.0, available at https:/
         _getHelperTextAriaHidden(helperText, hasSlottedHelper) {
           return (!(helperText || hasSlottedHelper)).toString();
         }
+
+        /**
+         * Fired whenever the field is validated.
+         *
+         * @event validated
+         * @param {Object} detail
+         * @param {boolean} detail.valid the result of the validation.
+         */
       }
 
       customElements.define(CheckboxGroupElement.is, CheckboxGroupElement);
