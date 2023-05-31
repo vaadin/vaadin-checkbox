@@ -1,12 +1,12 @@
 {
   "name": "@vaadin/vaadin-checkbox",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "@vaadin/vaadin-checkbox",
-      "version": "2.5.1",
+      "version": "2.6.0",
       "license": "Apache-2.0",
       "dependencies": {
         "@polymer/polymer": "^3.0.0",
