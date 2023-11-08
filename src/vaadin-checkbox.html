@@ -265,12 +265,8 @@ This program is available under Apache License Version 2.0, available at https:/
           this.addEventListener('keyup', e => {
             if (this.__interactionsAllowed(e) && e.keyCode === 32) {
               e.preventDefault();
-              this._toggleChecked();
+              this.click();
               this.removeAttribute('active');
-
-              if (this.indeterminate) {
-                this.indeterminate = false;
-              }
             }
           });
         }
