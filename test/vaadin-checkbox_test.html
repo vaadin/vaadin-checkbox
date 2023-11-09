@@ -228,6 +228,16 @@
         expect(vaadinCheckbox.getAttribute('aria-checked')).to.be.eql('true');
       });
 
+      it('should fire click event on space key press', () => {
+        const spy = sinon.spy();
+        vaadinCheckbox.addEventListener('click', spy);
+
+        MockInteractions.keyDownOn(vaadinCheckbox, 32);
+        MockInteractions.keyUpOn(vaadinCheckbox, 32);
+
+        expect(spy).to.be.calledOnce;
+      });
+
       it('should not be checked after space when initially checked is true and indeterminate is true', () => {
         vaadinCheckbox.checked = true;
         vaadinCheckbox.indeterminate = true;
